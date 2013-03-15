@@ -1,0 +1,7 @@
+.container
+  %form{:class => "form-signin"}
+    %h2{:class => "form-signin-heading"} Загрузить резюме
+    %button{:class => "btn btn-large btn-primary", :type => "submit"} Загрузить
+%form_for do |f|
+  = f.file_field :image
+  = f.submit

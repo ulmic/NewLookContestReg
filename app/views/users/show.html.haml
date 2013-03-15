@@ -1,0 +1,110 @@
+%table
+  - @user.each do |u|
+  %tr
+    %td= u.first_name =u.middle_name =u.last_name 
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Middle name:</b>
+  <%= @user.middle_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @user.district %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%= @user.birth_date %>
+</p>
+
+<p>
+  <b>School:</b>
+  <%= @user.school %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @user.group %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%= @user.job %>
+</p>
+
+<p>
+  <b>Role:</b>
+  <%= @user.role %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @user.street %>
+</p>
+
+<p>
+  <b>House:</b>
+  <%= @user.house %>
+</p>
+
+<p>
+  <b>Building:</b>
+  <%= @user.building %>
+</p>
+
+<p>
+  <b>Flat:</b>
+  <%= @user.flat %>
+</p>
+
+<p>
+  <b>Mobile phone:</b>
+  <%= @user.mobile_phone %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%= @user.home_phone %>
+</p>
+
+<p>
+  <b>Icq:</b>
+  <%= @user.icq %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Vkontakte:</b>
+  <%= @user.vkontakte %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @user.twitter %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

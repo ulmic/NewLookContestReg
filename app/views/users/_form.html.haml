@@ -1,0 +1,72 @@
+= form_for(@user) do |f|
+  = if @user.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    %big Фамилия* &nbsp
+    = f.text_field :first_name
+  .field
+    %big Имя* &nbsp
+    = f.text_field :middle_name
+  .field
+    %big Отчество* &nbsp
+    = f.text_field :last_name
+  .field
+    %big Муниципальное образование* &nbsp
+    %select
+    - for d in @district
+      %option{:value => d.id, :selected => d.id == 0}= d.title
+  .field
+    %big Дата рождения* &nbsp
+    = f.date_select :birth_date
+  .field
+    %big Учебное заведение* &nbsp
+    = f.text_field :school
+  .field
+    %big Группа (класс)* &nbsp
+    = f.text_field :group
+  .field
+    %big Место работы &nbsp
+    = f.text_field :job
+  .field
+    %big Должность &nbsp
+    = f.text_field :role
+  .field
+    %big Населённый пункт* &nbsp
+    = f.text_field :city
+  .field
+    %big Улица &nbsp
+    = f.text_field :street
+  .field
+    %big Дом &nbsp
+    = f.text_field :house
+  .field
+    %big Строение &nbsp
+    = f.text_field :building
+  .field
+    %big Квартира &nbsp
+    = f.text_field :flat
+  .field
+    %big Мобильный телефон* &nbsp
+    = f.text_field :mobile_phone
+  .field
+    %big Домашний телефон &nbsp
+    = f.text_field :home_phone
+  .field
+    %big ICQ &nbsp
+    = f.text_field :icq
+  .field
+    %big Email* &nbsp
+    = f.text_field :email
+  .field
+    %big ВКонтакте &nbsp
+    = f.text_field :vkontakte
+  .field
+    %big Twitter &nbsp
+    = f.text_field :twitter
+  .actions
+    = f.submit

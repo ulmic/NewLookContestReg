@@ -1,0 +1,6 @@
+%p{:align => "center"}
+  %h1 Заполнить анкету
+%br
+
+= render 'form'
+= link_to 'Back', users_path
