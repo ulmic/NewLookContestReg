@@ -7,7 +7,6 @@ gem 'haml-rails'
 gem 'haml'
 gem 'jquery-rails'
 gem 'carrierwave'
-gem 'rmagick'
 gem 'sqlite3'
 
 group :assets do
