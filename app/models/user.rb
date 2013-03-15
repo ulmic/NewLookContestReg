@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessible :birth_date, :building, :city, :district, :email, :first_name, :flat, :group, :home_phone, :house, :icq, :job, :last_name, 
-                  :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte
+                  :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte, :filename
 
   has_one :district
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

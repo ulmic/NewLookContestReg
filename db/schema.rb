@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313055353) do
+ActiveRecord::Schema.define(:version => 20130315062810) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20130313055353) do
     t.string   "twitter"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "filename"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
