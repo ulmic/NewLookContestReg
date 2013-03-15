@@ -45,7 +45,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         cookies[:current_user] = @user.id
-        format.html { redirect_to upload_path, notice: 'User was successfully created.' }
+        format.html { redirect_to  new_public_work_path, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }

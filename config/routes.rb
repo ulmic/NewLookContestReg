@@ -1,4 +1,7 @@
 NLCR::Application.routes.draw do
+  resources :public_works
+
+
   get "users/upload_resume"  
 
   resources :admins

@@ -7,5 +7,6 @@ class UserAddFilename < ActiveRecord::Migration
 
   def change
     add_column :users, :filename, :string
+    add_column :users, :image, :string
   end
 end
