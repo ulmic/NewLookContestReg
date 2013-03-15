@@ -1,0 +1,25 @@
+= form_for @public_work do |f|
+  - if @public_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@public_work.errors.count, "error")} prohibited this public_work from being saved:"
+      %ul
+        - @public_work.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label "Руководитель"
+    = f.text_field :header
+  .field
+    = f.label "Координаты руководителя"
+    = f.text_field :header_coordinates
+  .field
+    = f.label "Номинация"
+    = f.text_field :nomination
+  .field
+    = f.label "Название"
+    = f.text_field :title
+  .field
+    = f.label "Аннотация"
+    = f.text_area :annotation, :cols => 20, :rows => 20
+  .actions
+    = f.submit 'Добавить'

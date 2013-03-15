@@ -1,0 +1,20 @@
+%p
+  %b Руководитель
+  = @public_work.header
+%p
+  %b Координаты руководителя
+  = @public_work.header_coordinates
+%p
+  %b Номинация
+  = @public_work.nomination
+%p
+  %b Название
+  = @public_work.title
+%p
+  %b Аннотация
+  = @public_work.annotation
+
+
+= link_to 'Добавить ещё публикацию', new_public_work_path
+\|
+= link_to 'Перейти к загрузке резюме', upload_path

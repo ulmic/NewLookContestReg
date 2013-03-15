@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  header: MyString
+  header_coordinates: MyString
+  nomination: MyString
+  title: MyString
+  annotation: MyString
+  user_id: 1
+
+two:
+  header: MyString
+  header_coordinates: MyString
+  nomination: MyString
+  title: MyString
+  annotation: MyString
+  user_id: 1
