@@ -7827,3 +7827,4 @@ NoMethodError (undefined method `filename' for nil:NilClass):
   Rendered /home/vencarbon/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
   Rendered /home/vencarbon/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
   Rendered /home/vencarbon/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+Connecting to database specified by database.yml

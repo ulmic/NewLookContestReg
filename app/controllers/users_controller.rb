@@ -44,6 +44,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        cookies[:current_user] = @user.id
         format.html { redirect_to upload_path, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
@@ -86,9 +87,14 @@ class UsersController < ApplicationController
   end
 
   def upload_r
+
     uploaded_io = params[:resume]
-    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
+    File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
       file.write(uploaded_io.read)
     end
+    @user = User.find(cookies[:current_user])
+    @user.filename = uploaded_io.original_filename
+    @user.save!
+    redirect_to "/success"
   end
 end

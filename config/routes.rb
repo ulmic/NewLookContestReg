@@ -6,4 +6,5 @@ NLCR::Application.routes.draw do
 
   match "upload" => "users#upload_resume"
   match "upload_r" => "users#upload_r"
+  match "success" => "pages#success"
 end
