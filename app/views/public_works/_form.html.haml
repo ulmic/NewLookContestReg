@@ -7,14 +7,17 @@
           %li= msg
 
   .field
-    = f.label "Руководитель"
+    = f.label "Руководитель работы"
     = f.text_field :header
   .field
     = f.label "Координаты руководителя"
     = f.text_field :header_coordinates
   .field
     = f.label "Номинация"
-    = f.text_field :nomination
+    %select{ :name => :nomination }
+      - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
+        %option{:value => df, :selected => df == 0} 
+          = df
   .field
     = f.label "Название"
     = f.text_field :title
