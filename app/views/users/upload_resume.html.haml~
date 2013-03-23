@@ -1,7 +1,8 @@
 .container
-  %form{:class => "form-signin"}
-    %h2{:class => "form-signin-heading"} Загрузить резюме
-    %button{:class => "btn btn-large btn-primary", :type => "submit"} Загрузить
-%form_for do |f|
-  = f.file_field :image
-  = f.submit
+=form_tag({:action => :upload_r}, :multipart => true, :class => "form-signin") do
+  %h2{:class => "form-signin-heading"} Загрузить портфолио
+  %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+  
+  = file_field_tag :resume
+  //= submit_tag
+  %button{:class => "btn btn-large btn-primary", :type => "submit"} Загрузить

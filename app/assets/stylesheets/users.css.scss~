@@ -1,9 +1,9 @@
-.field {
+.field .public_field {
   text-align: right;
   padding-right: 200px;
 }
 
-.field input[type="text"] {
+.field input[type="text"]  {
   height: auto;
   margin-bottom: 15px;
   padding: 5px 5px;
@@ -32,8 +32,4 @@
   height: auto;
   margin-bottom: 15px;
   padding: 7px 9px;
-}
-
-.container {
-  float: left;
 }

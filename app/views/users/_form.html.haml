@@ -18,8 +18,8 @@
   .field
     %big Муниципальное образование* &nbsp
     %select
-    - for d in District.all
-      %option{:value => d.id, :selected => d.id == 0}= d.title
+      -for d in District.all
+        %option{:value => d.id, :selected => d.id == 0}= d.title
   .field
     %big Дата рождения* &nbsp
     = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true
@@ -68,5 +68,14 @@
   .field
     %big Twitter &nbsp
     = f.text_field :twitter
+  .field
+    %big Мероприятия, в которых участвовал
+    = f.text_area :events
+  .field
+    %big Награды и заслуги
+    = f.text_area :honors
+  .field
+    %big СМИ, где публиковался
+    = f.text_area :media
   .actions
     = f.submit "Перейти к отправке"

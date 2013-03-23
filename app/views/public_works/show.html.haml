@@ -1,20 +1,23 @@
 %p
   %b Руководитель
   = @public_work.header
-%p
+%p  
   %b Координаты руководителя
   = @public_work.header_coordinates
-%p
+%p  
   %b Номинация
   = @public_work.nomination
-%p
+%p  
   %b Название
   = @public_work.title
-%p
+%p  
   %b Аннотация
   = @public_work.annotation
+%p  
+  %b Текст
+  = @public_work.text
+%p  
+  %b Ссылка на видео
+  = @public_work.video_link
 
-
-= link_to 'Добавить ещё публикацию', new_public_work_path
-\|
-= link_to 'Перейти к загрузке резюме', upload_path
+= button_to 'Перейти к загрузке портфолио', upload_path, :class => "btn btn-large btn-success"

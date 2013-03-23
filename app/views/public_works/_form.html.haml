@@ -1,28 +1,20 @@
-= form_for @public_work do |f|
-  - if @public_work.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@public_work.errors.count, "error")} prohibited this public_work from being saved:"
-      %ul
-        - @public_work.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
+= simple_form_for @public_work do |f|
+  .public_field
     = f.label "Руководитель работы"
-    = f.text_field :header
-  .field
+    = f.text_field :header, :class => :span8
     = f.label "Координаты руководителя"
-    = f.text_field :header_coordinates
-  .field
+    = f.text_field :header_coordinates, :class => :span8
     = f.label "Номинация"
     %select{ :name => :nomination }
       - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
         %option{:value => df, :selected => df == 0} 
           = df
-  .field
     = f.label "Название"
-    = f.text_field :title
-  .field
+    = f.text_field :title, :class => :span8
     = f.label "Аннотация"
-    = f.text_area :annotation, :cols => 20, :rows => 20
-  .actions
-    = f.submit 'Добавить'
+    = f.text_area :annotation, :rows => 5, :class => :span8
+    = f.label "Текст работы"
+    = f.text_area :text, :rows => 20, :class => :span8
+    = f.label "Ссылка на видео-материал (если имеется)"
+    = f.text_field :video_link, :class => :span8
+    = f.submit "Добавить", :class => "btn btn-large btn-success"
