@@ -37636,3 +37636,2156 @@ Served asset /districts.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:19:09 +0400
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"", "annotation"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "public_works" ("annotation", "created_at", "header", "header_coordinates", "nomination", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["annotation", ""], ["created_at", Sat, 23 Mar 2013 13:24:33 UTC +00:00], ["header", ""], ["header_coordinates", ""], ["nomination", nil], ["title", ""], ["updated_at", Sat, 23 Mar 2013 13:24:33 UTC +00:00], ["user_id", 7]]
+  [1m[36m (317.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/public_works/5
+Completed 302 Found in 435ms (ActiveRecord: 324.0ms)
+
+
+Started GET "/public_works/5" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Processing by PublicWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPublicWork Load (0.3ms)[0m  SELECT "public_works".* FROM "public_works" WHERE "public_works"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered public_works/show.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:33 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:24:34 +0400
+Served asset /application.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (345.7ms)[0m  CREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (331.9ms)[0m  [1mCREATE TABLE "districts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (508.6ms)[0m  CREATE TABLE "public_works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "header" varchar(255), "header_coordinates" varchar(255), "nomination" varchar(255), "title" varchar(255), "annotation" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (365.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "middle_name" varchar(255), "last_name" varchar(255), "district" integer, "birth_date" date, "school" varchar(255), "group" varchar(255), "job" varchar(255), "role" varchar(255), "city" varchar(255), "street" varchar(255), "house" varchar(255), "building" varchar(255), "flat" varchar(255), "mobile_phone" varchar(255), "home_phone" varchar(255), "icq" varchar(255), "email" varchar(255), "vkontakte" varchar(255), "twitter" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "filename" varchar(255)) [0m
+  [1m[35m (355.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (343.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (521.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (354.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315181409')
+  [1m[36m (288.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311001236')[0m
+  [1m[35m (277.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315062810')
+  [1m[36m (463.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311002007')[0m
+  [1m[35m (336.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130311221105')
+  [1m[36m (311.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311204520')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:07 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (16.2ms)
+  Rendered public_works/new.html.haml within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb4dee68>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:50 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (11.7ms)
+  Rendered public_works/new.html.haml within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb53dd848>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:51 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (11.6ms)
+  Rendered public_works/new.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb4a2cccc>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:52 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (11.7ms)
+  Rendered public_works/new.html.haml within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb49abd0c>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:52 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (21.0ms)
+  Rendered public_works/new.html.haml within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb3f34798>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:28:52 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (12.6ms)
+  Rendered public_works/new.html.haml within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `text' for #<PublicWork:0xb3c90c30>):
+    15:     = f.text_area :annotation, :rows => 5, :class => :span8
+    16:     = f.label "Текст работы"
+    17:     = f.text_area :text, :rows => 20, :class => :span8
+    18:     = f.submit "Добавить"
+  app/views/public_works/_form.html.haml:18:in `block in _app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__403447202__625305538'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___665589973__626277988'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (65.6ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (527.1ms)[0m  CREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (387.3ms)[0m  [1mCREATE TABLE "districts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (376.2ms)[0m  CREATE TABLE "public_works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "header" varchar(255), "header_coordinates" varchar(255), "nomination" varchar(255), "title" varchar(255), "annotation" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (353.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "middle_name" varchar(255), "last_name" varchar(255), "district" integer, "birth_date" date, "school" varchar(255), "group" varchar(255), "job" varchar(255), "role" varchar(255), "city" varchar(255), "street" varchar(255), "house" varchar(255), "building" varchar(255), "flat" varchar(255), "mobile_phone" varchar(255), "home_phone" varchar(255), "icq" varchar(255), "email" varchar(255), "vkontakte" varchar(255), "twitter" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "filename" varchar(255)) [0m
+  [1m[35m (552.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (434.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (488.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (520.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315181409')
+  [1m[36m (377.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311001236')[0m
+  [1m[35m (322.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315062810')
+  [1m[36m (322.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311002007')[0m
+  [1m[35m (451.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130311221105')
+  [1m[36m (314.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311204520')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (325.8ms)[0m  CREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "password" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (354.1ms)[0m  [1mCREATE TABLE "districts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (365.0ms)[0m  CREATE TABLE "public_works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "header" varchar(255), "header_coordinates" varchar(255), "nomination" varchar(255), "title" varchar(255), "annotation" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (589.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "middle_name" varchar(255), "last_name" varchar(255), "district" integer, "birth_date" date, "school" varchar(255), "group" varchar(255), "job" varchar(255), "role" varchar(255), "city" varchar(255), "street" varchar(255), "house" varchar(255), "building" varchar(255), "flat" varchar(255), "mobile_phone" varchar(255), "home_phone" varchar(255), "icq" varchar(255), "email" varchar(255), "vkontakte" varchar(255), "twitter" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "filename" varchar(255)) [0m
+  [1m[35m (307.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (354.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (343.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (465.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315181409')
+  [1m[36m (299.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311001236')[0m
+  [1m[35m (333.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130315062810')
+  [1m[36m (311.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311002007')[0m
+  [1m[35m (488.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130311221105')
+  [1m[36m (299.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130311204520')[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130311001236)
+Migrating to CreateDistricts (20130311002007)
+Migrating to AddEmailUniquenessIndex (20130311204520)
+Migrating to CreateAdmins (20130311221105)
+Migrating to UserAddFilename (20130315062810)
+Migrating to CreatePublicWorks (20130315181409)
+Migrating to AddTextToPublicWork (20130323133715)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "public_works" ADD "text" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130323133715')[0m
+  [1m[35m (319.4ms)[0m  commit transaction
+Migrating to AddVideoLinkToPublicWork (20130323133758)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "public_works" ADD "video_link" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130323133758')[0m
+  [1m[35m (397.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (10.4ms)
+  Rendered public_works/new.html.haml within layouts/application (11.7ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 53ms (Views: 33.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /bootstrap.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /users.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:39:15 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:40:25 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (18.7ms)
+  Rendered public_works/new.html.haml within layouts/application (20.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 111ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:26 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (23.9ms)
+  Rendered public_works/new.html.haml within layouts/application (25.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /public_works.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /users.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:46 +0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (19.5ms)
+  Rendered public_works/new.html.haml within layouts/application (21.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 97ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /pages.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:40:59 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-23 17:41:25 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"", "annotation"=>"", "text"=>"", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Completed 404 Not Found in 19ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=7):
+  app/controllers/public_works_controller.rb:29:in `create'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/public_works" for 127.0.0.1 at 2013-03-23 17:41:42 +0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PublicWorksController):
+  actionpack (3.2.12) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.12) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  sass (3.2.7) lib/sass/plugin/rack.rb:54:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__53623652__call__990559671__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (20.0ms)
+  Rendered public_works/new.html.haml within layouts/application (21.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 53ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:47 +0400
+Served asset /public_works.css - 304 Not Modified (73ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /districts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:41:48 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-23 17:41:50 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"", "annotation"=>"", "text"=>"", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "7"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=7):
+  app/controllers/public_works_controller.rb:29:in `create'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 17:42:20 +0400
+Processing by UsersController#new as HTML
+  [1m[36mDistrict Load (0.1ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (22.2ms)
+  Rendered users/new.html.haml within layouts/application (23.9ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 90ms (Views: 51.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:21 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"", "group"=>"", "job"=>"", "role"=>"", "city"=>"", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mDistrict Load (0.3ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (14.7ms)
+  Rendered users/new.html.haml within layouts/application (16.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 117ms (Views: 38.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /districts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:24 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"", "group"=>"", "job"=>"", "role"=>"", "city"=>"", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mDistrict Load (0.2ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (17.6ms)
+  Rendered users/new.html.haml within layouts/application (19.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 49ms (Views: 40.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /admins.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /bootstrap.css - 304 Not Modified (66ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:33 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"", "group"=>"", "job"=>"", "role"=>"", "city"=>"", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mDistrict Load (0.3ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (15.6ms)
+  Rendered users/new.html.haml within layouts/application (17.5ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 48ms (Views: 39.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /pages.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /public_works.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:37 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-23 17:42:40 +0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /application.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /admins.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:41 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Processing by UsersController#new as HTML
+  [1m[35mDistrict Load (0.4ms)[0m  SELECT "districts".* FROM "districts" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (10.0ms)
+  Rendered users/new.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:46 +0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"fdvdf", "middle_name"=>"fdvdfv", "last_name"=>"dfvdfvd", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"fdvdf", "group"=>"dfvdfv", "job"=>"", "role"=>"", "city"=>"fdvdfvdf", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"fdvdfvdf", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (14.8ms)
+  Rendered users/new.html.haml within layouts/application (16.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 102ms (Views: 94.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 17:42:58 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"fdvdf", "middle_name"=>"fdvdfv", "last_name"=>"dfvdfvd", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"fdvdf", "group"=>"dfvdfv", "job"=>"", "role"=>"", "city"=>"fdvdfvdf", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"fdvdfvdf", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (20.3ms)
+  Rendered users/new.html.haml within layouts/application (22.6ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /districts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:14 +0400
+Served asset /application.js - 304 Not Modified (67ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Processing by UsersController#new as HTML
+  [1m[35mDistrict Load (0.3ms)[0m  SELECT "districts".* FROM "districts" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (14.7ms)
+  Rendered users/new.html.haml within layouts/application (20.7ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /admins.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /districts.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:01:18 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Processing by UsersController#new as HTML
+  [1m[35mDistrict Load (3.0ms)[0m  SELECT "districts".* FROM "districts" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (13.9ms)
+  Rendered users/new.html.haml within layouts/application (15.6ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /admins.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:08 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Processing by UsersController#new as HTML
+  [1m[35mDistrict Load (0.5ms)[0m  SELECT "districts".* FROM "districts" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (14.4ms)
+  Rendered users/new.html.haml within layouts/application (16.7ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /admins.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /admins.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:10:58 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"", "middle_name"=>"", "last_name"=>"", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"", "group"=>"", "job"=>"", "role"=>"", "city"=>"", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"", "home_phone"=>"", "icq"=>"", "email"=>"", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mDistrict Load (0.4ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  Rendered users/_form.html.haml (17.4ms)
+  Rendered users/new.html.haml within layouts/application (19.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 98ms (Views: 91.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:06 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 18:11:26 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"fdvdfvdf", "middle_name"=>"dfvdfv", "last_name"=>"fdvdfvdf", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"fdvdf", "group"=>"fdvdf", "job"=>"fdvfdv", "role"=>"fdvdf", "city"=>"fdvdf", "street"=>"", "house"=>"", "building"=>"", "flat"=>"", "mobile_phone"=>"5645", "home_phone"=>"", "icq"=>"", "email"=>"kvbd@fkldvn.ri", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('kvbd@fkldvn.ri') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("birth_date", "building", "city", "created_at", "district", "email", "filename", "first_name", "flat", "group", "home_phone", "house", "icq", "job", "last_name", "middle_name", "mobile_phone", "role", "school", "street", "twitter", "updated_at", "vkontakte") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["birth_date", Sat, 23 Mar 1991], ["building", ""], ["city", "fdvdf"], ["created_at", Sat, 23 Mar 2013 14:11:26 UTC +00:00], ["district", nil], ["email", "kvbd@fkldvn.ri"], ["filename", nil], ["first_name", "fdvdfvdf"], ["flat", ""], ["group", "fdvdf"], ["home_phone", ""], ["house", ""], ["icq", ""], ["job", "fdvfdv"], ["last_name", "fdvdfvdf"], ["middle_name", "dfvdfv"], ["mobile_phone", "5645"], ["role", "fdvdf"], ["school", "fdvdf"], ["street", ""], ["twitter", ""], ["updated_at", Sat, 23 Mar 2013 14:11:26 UTC +00:00], ["vkontakte", ""]]
+  [1m[36m (406.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/public_works/new
+Completed 302 Found in 419ms (ActiveRecord: 407.4ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (9.4ms)
+  Rendered public_works/new.html.haml within layouts/application (10.6ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /public_works.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /public_works.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:11:27 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-23 18:11:32 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"", "annotation"=>"", "text"=>"", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[35mUser Load (3.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: text, video_link):
+  app/controllers/public_works_controller.rb:29:in `create'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"", "annotation"=>"", "text"=>"", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "public_works" ("annotation", "created_at", "header", "header_coordinates", "nomination", "text", "title", "updated_at", "user_id", "video_link") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["annotation", ""], ["created_at", Sat, 23 Mar 2013 14:13:13 UTC +00:00], ["header", ""], ["header_coordinates", ""], ["nomination", nil], ["text", ""], ["title", ""], ["updated_at", Sat, 23 Mar 2013 14:13:13 UTC +00:00], ["user_id", 1], ["video_link", ""]]
+  [1m[35m (331.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/public_works/1
+Completed 302 Found in 411ms (ActiveRecord: 334.1ms)
+
+
+Started GET "/public_works/1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Processing by PublicWorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPublicWork Load (0.3ms)[0m  [1mSELECT "public_works".* FROM "public_works" WHERE "public_works"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered public_works/show.html.haml within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:13:13 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/upload" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Processing by UsersController#upload_resume as HTML
+  Rendered users/upload_resume.html.haml within layouts/application (5.8ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 92ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 18:29:42 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /districts.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 18:29:43 +0400
+Served asset /users.js - 304 Not Modified (0ms)

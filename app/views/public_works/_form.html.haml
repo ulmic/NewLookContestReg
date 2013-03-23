@@ -12,5 +12,9 @@
     = f.label "Название"
     = f.text_field :title, :class => :span8
     = f.label "Аннотация"
-    = f.text_area :annotation, :rows => 20, :cols => 100, :class => :span8
+    = f.text_area :annotation, :rows => 5, :class => :span8
+    = f.label "Текст работы"
+    = f.text_area :text, :rows => 20, :class => :span8
+    = f.label "Ссылка на видео-материал (если имеется)"
+    = f.text_field :video_link, :class => :span8
     = f.submit "Добавить"
