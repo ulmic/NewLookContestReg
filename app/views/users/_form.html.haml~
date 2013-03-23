@@ -8,7 +8,7 @@
           %li= msg
   .field
     %big Фамилия* &nbsp
-    = f.text_field :first_name{:class => "input-large"}
+    = f.text_field :first_name
   .field
     %big Имя* &nbsp
     = f.text_field :middle_name
@@ -68,5 +68,14 @@
   .field
     %big Twitter &nbsp
     = f.text_field :twitter
+  .field
+    %big Мероприятия, в которых участвовал
+    = f.text_area :events
+  .field
+    %big Награды и заслуги
+    = f.text_area :honors
+  .field
+    %big СМИ, где публиковался
+    = f.text_area :media
   .actions
     = f.submit "Перейти к отправке"

@@ -68,5 +68,14 @@
   .field
     %big Twitter &nbsp
     = f.text_field :twitter
+  .field
+    %big Мероприятия, в которых участвовал
+    = f.text_area :events
+  .field
+    %big Награды и заслуги
+    = f.text_area :honors
+  .field
+    %big СМИ, где публиковался
+    = f.text_area :media
   .actions
     = f.submit "Перейти к отправке"

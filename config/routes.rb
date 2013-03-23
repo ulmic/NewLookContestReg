@@ -1,4 +1,7 @@
 NLCR::Application.routes.draw do
+  resources :portfolios
+
+
   resources :public_works
 
 
