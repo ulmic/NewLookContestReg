@@ -21893,3 +21893,1251 @@ Served asset /public_works.js - 304 Not Modified (0ms)
 
 Started GET "/assets/users.js?body=1" for 95.68.131.253 at 2013-03-17 01:48:38 +0000
 Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/js/jquery.js" for 127.0.0.1 at 2013-03-23 15:20:45 +0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/js/jquery.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/js/bootstrap-modal.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-modal.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/js/bootstrap-dropdown.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-dropdown.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/js/bootstrap-scrollspy.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-scrollspy.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/js/bootstrap-transition.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-transition.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/js/bootstrap-alert.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-alert.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/js/bootstrap-tab.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-tab.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/js/bootstrap-tooltip.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-tooltip.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/js/bootstrap-popover.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-popover.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/js/bootstrap-button.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-button.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/js/bootstrap-carousel.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-carousel.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/js/bootstrap-collapse.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-collapse.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/js/bootstrap-typeahead.js" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap-typeahead.js"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/ico/favicon.png" for 127.0.0.1 at 2013-03-23 15:20:46 +0400
+
+ActionController::RoutingError (No route matches [GET] "/images/ico/favicon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:20:49 +0400
+Processing by UsersController#new as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (38.5ms)
+  Rendered users/new.html.haml within layouts/application (43.8ms)
+Compiled public_works.css  (31ms)  (pid 3505)
+Compiled jquery.js  (6ms)  (pid 3505)
+Compiled jquery_ujs.js  (0ms)  (pid 3505)
+Compiled public_works.js  (586ms)  (pid 3505)
+Compiled application.js  (635ms)  (pid 3505)
+  Rendered layouts/_footer.html.haml (2.1ms)
+Completed 200 OK in 1057ms (Views: 849.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:50 +0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:50 +0400
+Served asset /public_works.js - 200 OK (10ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /public_works.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /pages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /admins.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /bootstrap.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /districts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /pages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /admins.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 15:20:51 +0400
+Served asset /districts.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:21:13 +0400
+Processing by UsersController#new as */*
+  [1m[36mDistrict Load (0.4ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (13.1ms)
+  Rendered users/new.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-23 15:22:03 +0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+18n0xDkBHgx/qWUbGTzc8lkFdpFPdDppYM2OwkavY=", "user"=>{"first_name"=>"Калашников ", "middle_name"=>"Павел", "last_name"=>"Вадимович", "birth_date(1i)"=>"1991", "birth_date(2i)"=>"3", "birth_date(3i)"=>"23", "school"=>"УлГТУ", "group"=>"ЭВМд-41", "job"=>"", "role"=>"", "city"=>"аывмав", "street"=>"авмва", "house"=>"312", "building"=>"31", "flat"=>"312", "mobile_phone"=>"3211516161", "home_phone"=>"", "icq"=>"", "email"=>"kgfb@gfklnbv.gfobnfgn", "vkontakte"=>"", "twitter"=>""}, "commit"=>"Перейти к отправке"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('kgfb@gfklnbv.gfobnfgn') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("birth_date", "building", "city", "created_at", "district", "email", "filename", "first_name", "flat", "group", "home_phone", "house", "icq", "job", "last_name", "middle_name", "mobile_phone", "role", "school", "street", "twitter", "updated_at", "vkontakte") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_date", Sat, 23 Mar 1991], ["building", "31"], ["city", "аывмав"], ["created_at", Sat, 23 Mar 2013 11:22:03 UTC +00:00], ["district", nil], ["email", "kgfb@gfklnbv.gfobnfgn"], ["filename", nil], ["first_name", "Калашников "], ["flat", "312"], ["group", "ЭВМд-41"], ["home_phone", ""], ["house", "312"], ["icq", ""], ["job", ""], ["last_name", "Вадимович"], ["middle_name", "Павел"], ["mobile_phone", "3211516161"], ["role", ""], ["school", "УлГТУ"], ["street", "авмва"], ["twitter", ""], ["updated_at", Sat, 23 Mar 2013 11:22:03 UTC +00:00], ["vkontakte", ""]]
+  [1m[35m (366.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/public_works/new
+Completed 302 Found in 721ms (ActiveRecord: 367.3ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (15.5ms)
+  Rendered public_works/new.html.haml within layouts/application (18.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 100ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 15:22:04 +0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2013-03-23 15:27:10 +0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Processing by UsersController#new as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (33.9ms)
+  Rendered users/new.html.haml within layouts/application (39.1ms)
+  Rendered layouts/_footer.html.haml (1.7ms)
+Completed 200 OK in 255ms (Views: 190.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /application.css - 304 Not Modified (68ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /admins.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /bootstrap.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /public_works.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /districts.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:14 +0400
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /districts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /admins.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /public_works.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 15:27:15 +0400
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:27:52 +0400
+Processing by UsersController#new as HTML
+  [1m[36mDistrict Load (0.4ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+ERROR: compiling _app_views_users__form_html_haml__521980660_88905020 RAISED /home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:74: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:77: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_users__form_html_haml__521980660_88905020(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  form_for(@user) do |f|
+haml_temp =  if @user.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false(("#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+));}</h2>\n  <ul>\n", 1, false);
+
+ @user.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n<div class='field'>\n  <big>Фамилия* &nbsp</big>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :first_name
+));}\n</div>\n<div class='field'>\n  <big>Имя* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :middle_name
+));}\n</div>\n<div class='field'>\n  <big>Отчество* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :last_name
+));}\n</div>\n<div class='field'>\n  <big>Муниципальное образование* &nbsp</big>\n  <select>\n", 1, false);
+
+
+for d in District.all
+_hamlout.push_text("    <option#{_hamlout.attributes({}, nil, :value => d.id, :selected => d.id == 0)}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((d.title
+));}</option>\n  </select>\n</div>\n<div class='field'>\n  <big>Дата рождения* &nbsp</big>\n  #{_hamlout.adjust_tabs(-1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true
+));}\n</div>\n<div class='field'>\n  <big>Учебное заведение* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :school
+));}\n</div>\n<div class='field'>\n  <big>Группа (класс)* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :group
+));}\n</div>\n<div class='field'>\n  <big>Место работы &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :job
+));}\n</div>\n<div class='field'>\n  <big>Должность &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :role
+));}\n</div>\n<div class='field'>\n  <big>Населённый пункт* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :city
+));}\n</div>\n<div class='field'>\n  <big>Улица &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :street
+));}\n</div>\n<div class='field'>\n  <big>Дом &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :house
+));}\n</div>\n<div class='field'>\n  <big>Строение &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :building
+));}\n</div>\n<div class='field'>\n  <big>Квартира &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :flat
+));}\n</div>\n<div class='field'>\n  <big>Мобильный телефон* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :mobile_phone
+));}\n</div>\n<div class='field'>\n  <big>Домашний телефон &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :home_phone
+));}\n</div>\n<div class='field'>\n  <big>ICQ &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :icq
+));}\n</div>\n<div class='field'>\n  <big>Email* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :email
+));}\n</div>\n<div class='field'>\n  <big>ВКонтакте &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :vkontakte
+));}\n</div>\n<div class='field'>\n  <big>Twitter &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :twitter
+));}\n</div>\n<div class='actions'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit "Перейти к отправке"
+));}\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `synchronize'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers.rb:90:in `non_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/pavel/projects/NewLookContestReg/app/views/users/new.html.haml:4:in `_app_views_users_new_html_haml___903624032__626551888'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/pavel/projects/NewLookContestReg/app/controllers/users_controller.rb:29:in `new'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__561374252__process_action__479072842__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/plugin/rack.rb:54:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__53623652__call__990559671__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered users/_form.html.haml (11.4ms)
+  Rendered users/new.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:74: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:77: syntax error, unexpected end-of-input, expecting keyword_end):
+    71:   .actions
+    72:     = f.submit "Перейти к отправке"
+  app/views/users/new.html.haml:4:in `_app_views_users_new_html_haml___903624032__626551888'
+  app/controllers/users_controller.rb:29:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:27:54 +0400
+Processing by UsersController#new as HTML
+  [1m[35mDistrict Load (0.4ms)[0m  SELECT "districts".* FROM "districts" 
+ERROR: compiling _app_views_users__form_html_haml__521980660_88905020 RAISED /home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:74: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:77: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_users__form_html_haml__521980660_88905020(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  form_for(@user) do |f|
+haml_temp =  if @user.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false(("#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+));}</h2>\n  <ul>\n", 1, false);
+
+ @user.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n<div class='field'>\n  <big>Фамилия* &nbsp</big>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :first_name
+));}\n</div>\n<div class='field'>\n  <big>Имя* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :middle_name
+));}\n</div>\n<div class='field'>\n  <big>Отчество* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :last_name
+));}\n</div>\n<div class='field'>\n  <big>Муниципальное образование* &nbsp</big>\n  <select>\n", 1, false);
+
+
+for d in District.all
+_hamlout.push_text("    <option#{_hamlout.attributes({}, nil, :value => d.id, :selected => d.id == 0)}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((d.title
+));}</option>\n  </select>\n</div>\n<div class='field'>\n  <big>Дата рождения* &nbsp</big>\n  #{_hamlout.adjust_tabs(-1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true
+));}\n</div>\n<div class='field'>\n  <big>Учебное заведение* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :school
+));}\n</div>\n<div class='field'>\n  <big>Группа (класс)* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :group
+));}\n</div>\n<div class='field'>\n  <big>Место работы &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :job
+));}\n</div>\n<div class='field'>\n  <big>Должность &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :role
+));}\n</div>\n<div class='field'>\n  <big>Населённый пункт* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :city
+));}\n</div>\n<div class='field'>\n  <big>Улица &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :street
+));}\n</div>\n<div class='field'>\n  <big>Дом &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :house
+));}\n</div>\n<div class='field'>\n  <big>Строение &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :building
+));}\n</div>\n<div class='field'>\n  <big>Квартира &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :flat
+));}\n</div>\n<div class='field'>\n  <big>Мобильный телефон* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :mobile_phone
+));}\n</div>\n<div class='field'>\n  <big>Домашний телефон &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :home_phone
+));}\n</div>\n<div class='field'>\n  <big>ICQ &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :icq
+));}\n</div>\n<div class='field'>\n  <big>Email* &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :email
+));}\n</div>\n<div class='field'>\n  <big>ВКонтакте &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :vkontakte
+));}\n</div>\n<div class='field'>\n  <big>Twitter &nbsp</big>\n  #{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :twitter
+));}\n</div>\n<div class='actions'>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit "Перейти к отправке"
+));}\n</div>\n", -1, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `synchronize'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers.rb:90:in `non_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/pavel/projects/NewLookContestReg/app/views/users/new.html.haml:4:in `_app_views_users_new_html_haml___903624032__626551888'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/pavel/projects/NewLookContestReg/app/controllers/users_controller.rb:29:in `new'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__561374252__process_action__479072842__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/plugin/rack.rb:54:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__53623652__call__990559671__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered users/_form.html.haml (13.3ms)
+  Rendered users/new.html.haml within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:74: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/pavel/projects/NewLookContestReg/app/views/users/_form.html.haml:77: syntax error, unexpected end-of-input, expecting keyword_end):
+    71:   .actions
+    72:     = f.submit "Перейти к отправке"
+  app/views/users/new.html.haml:4:in `_app_views_users_new_html_haml___903624032__626551888'
+  app/controllers/users_controller.rb:29:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Processing by UsersController#new as HTML
+  [1m[36mDistrict Load (0.4ms)[0m  [1mSELECT "districts".* FROM "districts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "districts".* FROM "districts" 
+  Rendered users/_form.html.haml (33.8ms)
+  Rendered users/new.html.haml within layouts/application (35.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /bootstrap.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-23 15:28:02 +0400
+Served asset /users.js - 304 Not Modified (0ms)
