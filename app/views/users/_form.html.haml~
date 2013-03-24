@@ -1,81 +1,46 @@
-= form_for(@user) do |f|
+= simple_form_for @user do |f|
   = if @user.errors.any?
     #error_explanation
       %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
-
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  .field
-    %big Фамилия* &nbsp
-    = f.text_field :first_name
-  .field
-    %big Имя* &nbsp
-    = f.text_field :middle_name
-  .field
-    %big Отчество* &nbsp
-    = f.text_field :last_name
-  .field
-    %big Муниципальное образование* &nbsp
-    %select
-      -for d in District.all
-        %option{:value => d.id, :selected => d.id == 0}= d.title
-  .field
-    %big Дата рождения* &nbsp
-    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true
-  .field
-    %big Учебное заведение* &nbsp
-    = f.text_field :school
-  .field
-    %big Группа (класс)* &nbsp
-    = f.text_field :group
-  .field
-    %big Место работы &nbsp
-    = f.text_field :job
-  .field
-    %big Должность &nbsp
-    = f.text_field :role
-  .field
-    %big Населённый пункт* &nbsp
-    = f.text_field :city
-  .field
-    %big Улица &nbsp
-    = f.text_field :street
-  .field
-    %big Дом &nbsp
-    = f.text_field :house
-  .field
-    %big Строение &nbsp
-    = f.text_field :building
-  .field
-    %big Квартира &nbsp
-    = f.text_field :flat
-  .field
-    %big Мобильный телефон* &nbsp
-    = f.text_field :mobile_phone
-  .field
-    %big Домашний телефон &nbsp
-    = f.text_field :home_phone
-  .field
-    %big ICQ &nbsp
-    = f.text_field :icq
-  .field
-    %big Email* &nbsp
-    = f.text_field :email
-  .field
-    %big ВКонтакте &nbsp
-    = f.text_field :vkontakte
-  .field
-    %big Twitter &nbsp
-    = f.text_field :twitter
-  .field
-    %big Мероприятия, в которых участвовал
-    = f.text_area :events
-  .field
-    %big Награды и заслуги
-    = f.text_area :honors
-  .field
-    %big СМИ, где публиковался
-    = f.text_area :media
-  .actions
-    = f.submit "Перейти к отправке"
+  - f.with_options :input_html => {:class => :span6}, :html => { :multipart => true } do |f|
+    .field
+      = f.input :first_name
+      = f.input :middle_name
+      = f.input :last_name
+      = f.label :district
+      %select
+        -for d in District.all
+          %option{:value => d.id, :selected => d.id == 0}= d.title
+      = f.label :birth_date
+      = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
+      = f.input :school
+      = f.input :group
+      = f.input :job
+      = f.input :role
+      = f.input :city
+      = f.input :street
+      = f.input :house
+      = f.input :building
+      = f.input :flat
+      = f.input :mobile_phone
+      = f.input :home_phone
+      = f.input :icq
+      = f.input :email
+      = f.input :vkontakte
+      = f.input :twitter
+      = f.label :events
+      = f.text_area :events, :class => :span6, :row => 5
+      = f.label :honors
+      = f.text_area :honors, :class => :span6, :row => 5
+      = f.label :media
+      = f.text_area :media, :class => :span6, :row => 5
+      = f.label :portfolio
+      = f.file_field :portfolio
+      %br
+      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
+    .actions
+      = f.submit "Отправить", :class => "btn btn-large btn-success"

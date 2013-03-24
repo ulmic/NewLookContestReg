@@ -1,20 +1,23 @@
 = simple_form_for @public_work do |f|
-  .public_field
-    = f.label "Руководитель работы"
-    = f.text_field :header, :class => :span8
-    = f.label "Координаты руководителя"
-    = f.text_field :header_coordinates, :class => :span8
-    = f.label "Номинация"
-    %select{ :name => :nomination }
-      - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
-        %option{:value => df, :selected => df == 0} 
-          = df
-    = f.label "Название"
-    = f.text_field :title, :class => :span8
-    = f.label "Аннотация"
-    = f.text_area :annotation, :rows => 5, :class => :span8
-    = f.label "Текст работы"
-    = f.text_area :text, :rows => 20, :class => :span8
-    = f.label "Ссылка на видео-материал (если имеется)"
-    = f.text_field :video_link, :class => :span8
-    = f.submit "Добавить", :class => "btn btn-large btn-success"
+  = if @public_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@public_work.errors.count, "error")} prohibited this user from being saved:"
+      %ul
+        - @public_work.errors.full_messages.each do |msg|
+          %li= msg
+  - f.with_options :input_html => {:class => :span8} do |f|
+    .public_field
+      = f.input :header
+      = f.input :header_coordinates
+      = f.label :nomination
+      %select{ :name => :nomination }
+        - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
+          %option{:value => df, :selected => df == 0} 
+            = df
+      = f.input :title, :class => :span8
+      = f.label :annotation
+      = f.text_area :annotation, :rows => 5, :class => :span8
+      = f.label :text
+      = f.text_area :text, :rows => 20, :class => :span8
+      = f.input :video_link, :placeholder => "вставлять ссылку, если имеется видео-материал"
+      = f.submit "Добавить", :class => "btn btn-large btn-success"
