@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130323150959) do
+ActiveRecord::Schema.define(:version => 20130324205402) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -60,12 +60,16 @@ ActiveRecord::Schema.define(:version => 20130323150959) do
     t.string   "email"
     t.string   "vkontakte"
     t.string   "twitter"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.string   "filename"
     t.string   "events"
     t.string   "honors"
     t.string   "media"
+    t.string   "portfolio_file_name"
+    t.string   "portfolio_content_type"
+    t.integer  "portfolio_file_size"
+    t.datetime "portfolio_updated_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -5,7 +5,7 @@
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  - f.with_options :input_html => {:class => :span6} do |f|
+  - f.with_options :input_html => {:class => :span6},  :html => { :multipart => true } do |f|
     .field
       = f.input :first_name
       = f.input :middle_name
@@ -15,7 +15,7 @@
         -for d in District.all
           %option{:value => d.id, :selected => d.id == 0}= d.title
       = f.label :birth_date
-      = f.date :date_start, :select_year => 1991, :end_year => 1999, :use_month_numbers => true 
+      = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
       = f.input :school
       = f.input :group
       = f.input :job
@@ -37,5 +37,7 @@
       = f.text_area :honors, :class => :span6, :row => 5
       = f.label :media
       = f.text_area :media, :class => :span6, :row => 5
+      = f.label :portfolio
+      = f.file_field :portfolio
     .actions
       = f.submit "Отправить", :class => "btn btn-large btn-success"

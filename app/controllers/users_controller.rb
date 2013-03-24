@@ -87,7 +87,6 @@ class UsersController < ApplicationController
   end
 
   def upload_r
-
     uploaded_io = params[:resume]
     File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
       file.write(uploaded_io.read)
