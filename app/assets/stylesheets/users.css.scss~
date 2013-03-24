@@ -1,5 +1,5 @@
-.field .public_field {
-  text-align: right;
+.field {
+  text-align: дуае;
   padding-right: 200px;
 }
 
