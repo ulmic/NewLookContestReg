@@ -54097,3 +54097,1182 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 19:59:35 +0400
 Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:07:14 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (33.5ms)
+  Rendered public_works/new.html.haml within layouts/application (36.4ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (undefined method `header_coordinate' for #<PublicWork:0xb57f9738>):
+    9:     .public_field
+    10:       = f.input :header
+    11:       = f.input :header_coordinate
+    12:       = f.label :nomination
+    13:       %select{ :name => :nomination }
+    14:         - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
+    15:           %option{:value => df, :selected => df == 0} 
+  app/views/public_works/_form.html.haml:12:in `block (2 levels) in _app_views_public_works__form_html_haml__954385218__626763428'
+  app/views/public_works/_form.html.haml:10:in `block in _app_views_public_works__form_html_haml__954385218__626763428'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__954385218__626763428'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___107531461__626807598'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (63.6ms)
+  Rendered public_works/new.html.haml within layouts/application (64.9ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:07:45 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:08:10 +0400
+Processing by PublicWorksController#new as HTML
+ERROR: compiling _app_views_public_works__form_html_haml__954385218__626426388 RAISED /home/pavel/projects/NewLookContestReg/app/views/public_works/_form.html.haml:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+...alse_true_false(( :video_link "вставлять в том ...
+...                               ^
+Function body:           def _app_views_public_works__form_html_haml__954385218__626426388(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "public_works/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;haml_temp =  simple_form_for @public_work do |f|
+haml_temp =  if @public_work.errors.any?
+_hamlout.push_text("<div id='error_explanation'>\n  <h2>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false(("#{pluralize(@public_work.errors.count, "error")} prohibited this user from being saved:"
+));}</h2>\n  <ul>\n", 1, false);
+ @public_work.errors.full_messages.each do |msg|
+_hamlout.push_text("    <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((msg
+));}</li>\n", 0, false);end
+_hamlout.push_text("  </ul>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false); f.with_options :input_html => {:class => :span8} do |f|
+_hamlout.push_text("<div class='public_field'>\n  #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( f.input :header
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.input :header_coordinates
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :nomination
+));}\n  <select name='nomination'>\n", 1, false); ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
+_hamlout.push_text("    <option#{_hamlout.attributes({}, nil, :value => df, :selected => df == 0)}>\n      #{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_false_false_true_false_true_false(( df
+));}\n    </option>\n", -1, false);end
+_hamlout.push_text("  </select>\n  #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( f.input :title, :class => :span8
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :annotation
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_area :annotation, :rows => 5, :class => :span8
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :text
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_area :text, :rows => 20, :class => :span8
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.input :video_link
+));}\n  <small>\n    #{_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( :video_link "вставлять в том случае, если таковой имеется"
+));}\n  </small>\n  #{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( f.submit "Добавить", :class => "btn btn-large btn-success"
+));}\n</div>\n", -1, false);end
+end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `synchronize'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers.rb:90:in `non_haml'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/haml-3.1.7/lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+/home/pavel/projects/NewLookContestReg/app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___107531461__626807598'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/pavel/projects/NewLookContestReg/app/controllers/public_works_controller.rb:20:in `new'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__199345135__process_action__42693468__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.7/lib/sass/plugin/rack.rb:54:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__580727429__call__466735394__callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/home/pavel/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered public_works/_form.html.haml (6.2ms)
+  Rendered public_works/new.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 11ms
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (64.1ms)
+  Rendered public_works/new.html.haml within layouts/application (65.5ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /districts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:18 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:08:30 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (110.1ms)
+  Rendered public_works/new.html.haml within layouts/application (111.4ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined method `a' for #<SimpleForm::FormBuilder:0xb4a1b6e8>):
+    21:       = f.text_area :text, :rows => 20, :class => :span8
+    22:       = f.input :video_link
+    23:       %small 
+    24:         = f.a :video_link 
+    25:         "вставлять в том случае, если таковой имеется"
+    26:       = f.submit "Добавить", :class => "btn btn-large btn-success"
+  app/views/public_works/_form.html.haml:24:in `block (2 levels) in _app_views_public_works__form_html_haml__954385218__628990378'
+  app/views/public_works/_form.html.haml:10:in `block in _app_views_public_works__form_html_haml__954385218__628990378'
+  app/views/public_works/_form.html.haml:1:in `_app_views_public_works__form_html_haml__954385218__628990378'
+  app/views/public_works/new.html.haml:4:in `_app_views_public_works_new_html_haml___107531461__626807598'
+  app/controllers/public_works_controller.rb:20:in `new'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (20.0ms)
+  Rendered public_works/new.html.haml within layouts/application (21.5ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /admins.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /portfolios.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:47 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:48 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:08:48 +0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (18.9ms)
+  Rendered public_works/new.html.haml within layouts/application (20.7ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /districts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:09:10 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (18.4ms)
+  Rendered public_works/new.html.haml within layouts/application (21.9ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /pages.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:27 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (13.9ms)
+  Rendered public_works/new.html.haml within layouts/application (15.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 103ms (Views: 84.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /admins.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:11:52 +0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:12:13 +0400
+
+ArgumentError (You need to supply at least one validation):
+  app/models/public_work.rb:5:in `<class:PublicWork>'
+  app/models/public_work.rb:1:in `<top (required)>'
+  app/controllers/public_works_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (13.9ms)
+  Rendered public_works/new.html.haml within layouts/application (15.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 59ms (Views: 38.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /portfolios.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /pages.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:22 +0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-24 20:12:33 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x1AN9z3+P0LcUQRfWb2Vg3+IER1+7Thu9As59XRLIxE=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"gbgtbgferf", "annotation"=>"", "text"=>"rferfer", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered public_works/_form.html.haml (14.1ms)
+  Rendered public_works/new.html.haml within layouts/application (15.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 112ms (Views: 38.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:12:34 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-24 20:13:16 +0400
+
+SyntaxError (/home/pavel/projects/NewLookContestReg/app/models/public_work.rb:8: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+/home/pavel/projects/NewLookContestReg/app/models/public_work.rb:10: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/public_works_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/pavel/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/public_works/new" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Processing by PublicWorksController#new as HTML
+  Rendered public_works/_form.html.haml (14.2ms)
+  Rendered public_works/new.html.haml within layouts/application (15.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 57ms (Views: 38.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /admins.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /application.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:03 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started POST "/public_works" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Processing by PublicWorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x1AN9z3+P0LcUQRfWb2Vg3+IER1+7Thu9As59XRLIxE=", "public_work"=>{"header"=>"", "header_coordinates"=>"", "title"=>"fgbgf", "annotation"=>"", "text"=>"fgbfgbf", "video_link"=>""}, "nomination"=>"Репортаж", "commit"=>"Добавить"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "public_works" ("annotation", "created_at", "header", "header_coordinates", "nomination", "text", "title", "updated_at", "user_id", "video_link") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["annotation", ""], ["created_at", Sun, 24 Mar 2013 16:50:22 UTC +00:00], ["header", ""], ["header_coordinates", ""], ["nomination", nil], ["text", "fgbfgbf"], ["title", "fgbgf"], ["updated_at", Sun, 24 Mar 2013 16:50:22 UTC +00:00], ["user_id", 6], ["video_link", ""]]
+  [1m[36m (390.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/public_works/5
+Completed 302 Found in 455ms (ActiveRecord: 392.2ms)
+
+
+Started GET "/public_works/5" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Processing by PublicWorksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPublicWork Load (0.3ms)[0m  SELECT "public_works".* FROM "public_works" WHERE "public_works"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered public_works/show.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/admins.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /admins.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /districts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /public_works.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /portfolios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admins.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /admins.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/portfolios.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /portfolios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/districts.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /districts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/public_works.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /public_works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-24 20:50:22 +0400
+Served asset /application.js - 304 Not Modified (4ms)

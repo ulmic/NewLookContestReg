@@ -34,8 +34,8 @@
       = f.label :events
       = f.text_area :events, :class => :span6, :row => 5
       = f.label :honors
-      = f.input :honors, :class => :span6, :row => 5
+      = f.text_area :honors, :class => :span6, :row => 5
       = f.label :media
-      = f.input :media, :class => :span6, :row => 5
+      = f.text_area :media, :class => :span6, :row => 5
     .actions
       = f.submit "Отправить", :class => "btn btn-large btn-success"
