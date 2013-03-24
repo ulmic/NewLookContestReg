@@ -5,54 +5,37 @@
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  .field
-    = f.label "Фамилия*"
-    = f.text_field :first_name, :class => :span6
-    = f.label "Имя*"
-    = f.text_field :middle_name, :class => :span6
-    = f.label "Отчество*"
-    = f.text_field :last_name, :class => :span6
-    = f.label "Муниципальное образование*"
-    %select
-      -for d in District.all
-        %option{:value => d.id, :selected => d.id == 0}= d.title
-    = f.label "Дата рождения*"
-    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
-    = f.label "Учебное заведение*"
-    = f.text_field :school, :class => :span6
-    = f.label "Группа*"
-    = f.text_field :group, :class => :span6
-    = f.label "Место работы"
-    = f.text_field :job, :class => :span6
-    = f.label "Должность"
-    = f.text_field :role, :class => :span6
-    = f.label "Населённый пункт*"
-    = f.text_field :city, :class => :span6
-    = f.label "Улица"
-    = f.text_field :street, :class => :span6
-    = f.label "Дом"
-    = f.text_field :house, :class => :span6
-    = f.label "Строение"
-    = f.text_field :building, :class => :span6
-    = f.label "Квартира"
-    = f.text_field :flat, :class => :span6
-    = f.label "Мобильный телефон*"
-    = f.text_field :mobile_phone, :class => :span6
-    = f.label "Домашний телефон"
-    = f.text_field :home_phone, :class => :span6
-    = f.label "ICQ"
-    = f.text_field :icq, :class => :span6
-    = f.label "Email*"
-    = f.text_field :email, :class => :span6
-    = f.label "ВКонтакте"
-    = f.text_field :vkontakte, :class => :span6
-    = f.label "Twitter"
-    = f.text_field :twitter, :class => :span6
-    = f.label "Мероприятия, в которых участвовал"
-    = f.text_area :events, :class => :span6, :row => 5
-    = f.label "Награды"
-    = f.text_area :honors, :class => :span6, :row => 5
-    = f.label "СМИ, где публиковался*"
-    = f.text_area :media, :class => :span6, :row => 5
-  .actions
-    = f.submit "Отправить"
+  - f.with_options :input_html => {:class => :span6} do |f|
+    .field
+      = f.input :first_name
+      = f.input :middle_name
+      = f.input :last_name
+      = f.label :district
+      %select
+        -for d in District.all
+          %option{:value => d.id, :selected => d.id == 0}= d.title
+      = f.label :birth_date
+      = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
+      = f.input :school
+      = f.input :group
+      = f.input :job
+      = f.input :role
+      = f.input :city
+      = f.input :street
+      = f.input :house
+      = f.input :building
+      = f.input :flat
+      = f.input :mobile_phone
+      = f.input :home_phone
+      = f.input :icq
+      = f.input :email
+      = f.input :vkontakte
+      = f.input :twitter
+      = f.label :events
+      = f.text_area :events, :class => :span6, :row => 5
+      = f.label :honors
+      = f.input :honors, :class => :span6, :row => 5
+      = f.label :media
+      = f.input :media, :class => :span6, :row => 5
+    .actions
+      = f.submit "Отправить", :class => "btn btn-large btn-success"
