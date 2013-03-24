@@ -8,6 +8,7 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'sqlite3'
+gem 'validate_url'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

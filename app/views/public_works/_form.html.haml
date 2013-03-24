@@ -1,4 +1,10 @@
 = simple_form_for @public_work do |f|
+  = if @public_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@public_work.errors.count, "error")} prohibited this user from being saved:"
+      %ul
+        - @public_work.errors.full_messages.each do |msg|
+          %li= msg
   .public_field
     = f.label "Руководитель работы"
     = f.text_field :header, :class => :span8

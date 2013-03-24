@@ -1,81 +1,58 @@
-= form_for(@user) do |f|
+= simple_form_for @user do |f|
   = if @user.errors.any?
     #error_explanation
       %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
-
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
   .field
-    %big Фамилия* &nbsp
-    = f.text_field :first_name
-  .field
-    %big Имя* &nbsp
-    = f.text_field :middle_name
-  .field
-    %big Отчество* &nbsp
-    = f.text_field :last_name
-  .field
-    %big Муниципальное образование* &nbsp
+    = f.label "Фамилия*"
+    = f.text_field :first_name, :class => :span6
+    = f.label "Имя*"
+    = f.text_field :middle_name, :class => :span6
+    = f.label "Отчество*"
+    = f.text_field :last_name, :class => :span6
+    = f.label "Муниципальное образование*"
     %select
       -for d in District.all
         %option{:value => d.id, :selected => d.id == 0}= d.title
-  .field
-    %big Дата рождения* &nbsp
-    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true
-  .field
-    %big Учебное заведение* &nbsp
-    = f.text_field :school
-  .field
-    %big Группа (класс)* &nbsp
-    = f.text_field :group
-  .field
-    %big Место работы &nbsp
-    = f.text_field :job
-  .field
-    %big Должность &nbsp
-    = f.text_field :role
-  .field
-    %big Населённый пункт* &nbsp
-    = f.text_field :city
-  .field
-    %big Улица &nbsp
-    = f.text_field :street
-  .field
-    %big Дом &nbsp
-    = f.text_field :house
-  .field
-    %big Строение &nbsp
-    = f.text_field :building
-  .field
-    %big Квартира &nbsp
-    = f.text_field :flat
-  .field
-    %big Мобильный телефон* &nbsp
-    = f.text_field :mobile_phone
-  .field
-    %big Домашний телефон &nbsp
-    = f.text_field :home_phone
-  .field
-    %big ICQ &nbsp
-    = f.text_field :icq
-  .field
-    %big Email* &nbsp
-    = f.text_field :email
-  .field
-    %big ВКонтакте &nbsp
-    = f.text_field :vkontakte
-  .field
-    %big Twitter &nbsp
-    = f.text_field :twitter
-  .field
-    %big Мероприятия, в которых участвовал
-    = f.text_area :events
-  .field
-    %big Награды и заслуги
-    = f.text_area :honors
-  .field
-    %big СМИ, где публиковался
-    = f.text_area :media
+    = f.label "Дата рождения*"
+    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true, :class => :span8
+    = f.label "Учебное заведение*"
+    = f.text_field :school, :class => :span6
+    = f.label "Группа*"
+    = f.text_field :group, :class => :span6
+    = f.label "Место работы"
+    = f.text_field :job, :class => :span6
+    = f.label "Должность"
+    = f.text_field :role, :class => :span6
+    = f.label "Населённый пункт*"
+    = f.text_field :city, :class => :span6
+    = f.label "Улица"
+    = f.text_field :street, :class => :span6
+    = f.label "Дом"
+    = f.text_field :house, :class => :span6
+    = f.label "Строение"
+    = f.text_field :building, :class => :span6
+    = f.label "Квартира"
+    = f.text_field :flat, :class => :span6
+    = f.label "Мобильный телефон*"
+    = f.text_field :mobile_phone, :class => :span6
+    = f.label "Домашний телефон"
+    = f.text_field :home_phone, :class => :span6
+    = f.label "ICQ"
+    = f.text_field :icq, :class => :span6
+    = f.label "Email*"
+    = f.text_field :email, :class => :span6
+    = f.label "ВКонтакте"
+    = f.text_field :vkontakte, :class => :span6
+    = f.label "Twitter"
+    = f.text_field :twitter, :class => :span6
+    = f.label "Мероприятия, в которых участвовал"
+    = f.text_area :events, :class => :span6, :row => 5
+    = f.label "Награды"
+    = f.text_area :honors, :class => :span6, :row => 5
+    = f.label "СМИ, где публиковался*"
+    = f.text_area :media, :class => :span6, :row => 5
   .actions
     = f.submit "Перейти к отправке"
