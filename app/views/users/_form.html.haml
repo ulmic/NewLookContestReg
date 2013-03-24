@@ -37,7 +37,11 @@
       = f.text_area :honors, :class => :span6, :row => 5
       = f.label :media
       = f.text_area :media, :class => :span6, :row => 5
+      %hr
       = f.label :portfolio
       = f.file_field :portfolio
+      %br
+      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
     .actions
       = f.submit "Отправить", :class => "btn btn-large btn-success"
