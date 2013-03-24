@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
                   :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte, :filename, :image, :events, :honors, :media
 
   has_one :district
-  has_one :public_works
+  has_many :public_works
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :first_name, :presence => true,

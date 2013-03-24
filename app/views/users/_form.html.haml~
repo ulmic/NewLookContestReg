@@ -17,7 +17,7 @@
       -for d in District.all
         %option{:value => d.id, :selected => d.id == 0}= d.title
     = f.label "Дата рождения*"
-    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true, :class => :span8
+    = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
     = f.label "Учебное заведение*"
     = f.text_field :school, :class => :span6
     = f.label "Группа*"
@@ -55,4 +55,4 @@
     = f.label "СМИ, где публиковался*"
     = f.text_area :media, :class => :span6, :row => 5
   .actions
-    = f.submit "Перейти к отправке"
+    = f.submit "Отправить"
