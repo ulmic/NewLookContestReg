@@ -1,0 +1,10 @@
+/*.public_field input[type="text"] {
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 5px 5px;
+}
+
+.public_field {
+  padding: 15px;
+}

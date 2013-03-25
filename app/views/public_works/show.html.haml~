@@ -1,0 +1,24 @@
+%p
+  %b Руководитель
+  = @public_work.header
+%p  
+  %b Координаты руководителя
+  = @public_work.header_coordinates
+%p  
+  %b Номинация
+  = @public_work.nomination
+%p  
+  %b Название
+  = @public_work.title
+%p  
+  %b Аннотация
+  = @public_work.annotation
+%p  
+  %b Текст
+  = @public_work.text
+%p  
+  %b Ссылка на видео
+  %a{:href => @public_work.video_link}
+    = @public_work.video_link
+
+= button_to 'Перейти к загрузке портфолио', "/success", :class => "btn btn-large btn-success"

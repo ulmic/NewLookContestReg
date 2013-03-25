@@ -1,0 +1,23 @@
+= simple_form_for @public_work do |f|
+  = if @public_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@public_work.errors.count, "error")} prohibited this user from being saved:"
+      %ul
+        - @public_work.errors.full_messages.each do |msg|
+          %li= msg
+  - f.with_options :input_html => {:class => :span8} do |f|
+    .public_field
+      = f.input :header
+      = f.input :header_coordinates
+      = f.label :nomination
+      %select{ :name => :nomination }
+        - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
+          %option{:value => df, :selected => df == 0} 
+            = df
+      = f.input :title, :class => :span8
+      = f.label :annotation
+      = f.text_area :annotation, :rows => 5, :class => :span8
+      = f.label :text
+      = f.text_area :text, :rows => 20, :class => :span8
+      = f.input :video_link
+      = f.submit "Добавить", :class => "btn btn-large btn-success"
