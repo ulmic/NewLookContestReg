@@ -49,5 +49,3 @@
     = f.label :media
     = @user.media
     %hr
-    = f.label :portfolio
-    = f.file_field :portfolio

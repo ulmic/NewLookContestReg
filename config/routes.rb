@@ -7,7 +7,6 @@ NLCR::Application.routes.draw do
 
   get "users/upload_resume"  
 
-  resources :admins
   resources :users
   
   match "admin" => "admins#login"

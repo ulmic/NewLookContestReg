@@ -4,6 +4,7 @@
   .right_align_table
     %h1
       Поданные заявки
+    %br
     %table
     - @users.each do |user|
       %tr

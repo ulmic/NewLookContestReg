@@ -10,6 +10,4 @@
       %tr
         %td= user.first_name + user.middle_name + user.last_name
         %td= link_to 'Показать', user
-        %td= link_to 'Изменить', edit_user_path(user)
-        %td= link_to 'Удалить', user, method: :delete, data: { confirm: 'Вы уверены?' }
       %br
