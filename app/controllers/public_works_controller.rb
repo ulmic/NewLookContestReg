@@ -1,5 +1,13 @@
 class PublicWorksController < ApplicationController
 
+  def index
+    @public_works = PublicWork.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @public_works }
+    end
+  end
 
   # GET /public_works/1
   # GET /public_works/1.json
