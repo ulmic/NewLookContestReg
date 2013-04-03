@@ -1,0 +1,10 @@
+.right_align_table
+  %h1
+    Поданные заявки
+  %br
+  %table
+  - @public_works.each do |pw|
+    %tr
+      %td= pw.title
+      %td= link_to 'Показать', user
+    %br
