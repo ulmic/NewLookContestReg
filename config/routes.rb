@@ -10,7 +10,7 @@ NLCR::Application.routes.draw do
   resources :admins
   resources :users
   
-  match "login" => "admins#login"
+  match "admin" => "admins#login"
   match "logout" => "admins#logout"
   match "upload" => "users#upload_resume"
   match "upload_r" => "users#upload_r"

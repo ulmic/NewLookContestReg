@@ -12,3 +12,4 @@
     Hello,
     = @admin.login
     = f.submit 'Log out'
+  %a{:class => "btn btn-large btn-success", :href => "/users"} Посмотреть пользователей
