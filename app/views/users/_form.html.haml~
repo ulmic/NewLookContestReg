@@ -5,7 +5,7 @@
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  - f.with_options :input_html => { :class => :span6 } do |f|
+  - f.with_options :input_html => {:class => :span6}, :html => { :multipart => true } do |f|
     .field
       = f.input :first_name
       = f.input :middle_name
@@ -14,6 +14,7 @@
       %select
         -for d in District.all
           %option{:value => d.id, :selected => d.id == 0}= d.title
+      = f.association :district
       = f.label :birth_date
       = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
       = f.input :school
@@ -38,13 +39,10 @@
       = f.label :media
       = f.text_area :media, :class => :span6, :row => 5
       %hr
-      = form_for([@posting,@attachment], :html => { :multipart => true, :name => 'new_attachment' } ) do |f|
-        .field
-          = f.label :portfolio
-          = f.file_field :portfolio, :onchange => "fileSelected('new_attachment','attachment_file','#{posting_attachments_path(@posting)}');"
-        %br
-        %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
-        %hr
-        .actions
-          = f.submit "Отправить", :class => "btn btn-large btn-success", :onclick => "uploadFile('new_attachment'); return false;"
-          = progress_upload_field('user_portfolio')
+      = f.label :portfolio
+      = f.file_field :portfolio
+      %br
+      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
+    .actions
+      = f.submit "Отправить", :class => "btn btn-large btn-success"

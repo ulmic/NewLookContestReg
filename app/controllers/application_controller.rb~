@@ -1,0 +1,20 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+  protected
+
+  def render_optional_error_file(status_code)
+    known_codes = ["404", "500"]
+    status = interpret_status(status_code)
+
+    if known_codes.include?(status_code)
+      render :template => "/errors/#{status[0,3]}.html.erb", :status => status, :layout => 'errors.html.erb'
+    else
+      render :template => "/errors/unknown.html.erb", :status => status, :layout => 'errors.html.erb'
+    end
+  end
+
+  def local_request?
+    true
+  end
+end

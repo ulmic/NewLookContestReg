@@ -80,4 +80,31 @@ class AdminsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def login
+    if session[:user_id].nil?
+      if request.post?
+        @admin = Admin.find_by_login(params[:login])
+        if @admin.nil?
+          flash[:notice] = 'wrong login'
+        else
+          if @admin.password === params[:password]
+            session[:user_id] = @admin.id
+            #respond_to do |format|
+            #  format.html { redirect_to @user }
+            #end
+          else
+            flash[:notice] = 'wrong password'
+          end
+        end
+      end
+    else
+      @admin = Admin.find_by_id(session[:user_id])
+    end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to ''
+  end
 end
