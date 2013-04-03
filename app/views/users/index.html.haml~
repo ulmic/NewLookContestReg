@@ -1,12 +1,15 @@
-%h1 Listing users
-%table
--@users.each do |user|
-  %tr
-    %td= user.first_name 
-    %td= user.middle_name
-    %td= user.last_name
-    %td= link_to 'Show', user
-    %td= link_to 'Edit', edit_user_path(user)
-    %td= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }
-%br
-= link_to 'New User', new_user_path
+- if session[:user_id].nil?
+  = render 'page_404'
+- else
+  .right_align_table
+    %h1
+      Поданные заявки
+    %br
+    %table
+    - @users.each do |user|
+      %tr
+        %td= user.first_name + user.middle_name + user.last_name
+        %td= link_to 'Показать', user
+        %td= link_to 'Изменить', edit_user_path(user)
+        %td= link_to 'Удалить', user, method: :delete, data: { confirm: 'Вы уверены?' }
+      %br

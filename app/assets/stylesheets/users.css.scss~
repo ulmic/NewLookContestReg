@@ -1,5 +1,5 @@
 .field {
-  text-align: дуае;
+  text-align: left;
   padding-right: 200px;
 }
 
@@ -32,4 +32,9 @@
   height: auto;
   margin-bottom: 15px;
   padding: 7px 9px;
+}
+
+.right_align_table {
+  padding-right: 100px;
+  text-align: right;
 }
