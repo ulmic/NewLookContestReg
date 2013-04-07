@@ -41,11 +41,11 @@
     %b  Email 
     = @user.email
     %b  Ник ВКонтакте 
-    %a{:href => "http://vk.com/" + @user.vkontakte} 
+    %a{:href => @user.vkontakte} 
       = @user.vkontakte
     %b Ник в Твиттере
     
-    %a{:href => "http://twitter.com" + @user.twitter} 
+    %a{:href => @user.twitter} 
       = @user.twitter
   %p
     %b Мероприятия, в которых принимал участие 

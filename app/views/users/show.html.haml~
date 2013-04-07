@@ -3,7 +3,7 @@
 - else
   %p
     %b Ф.И.О 
-    = @user.first_name + " " + @user.middle_name + " " + @user.last_name
+    = @title
   %p  
     %b Дата рождения 
     = @user.birth_date 
@@ -41,7 +41,7 @@
     %b  Email 
     = @user.email
     %b  Ник ВКонтакте 
-    %a{:href => "http://vk.com/" + @user.vkontakte} 
+    %a{:href => @user.vkontakte} 
       = @user.vkontakte
     %b Ник в Твиттере
     
