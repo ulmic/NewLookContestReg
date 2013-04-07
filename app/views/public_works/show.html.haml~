@@ -21,4 +21,4 @@
   %a{:href => @public_work.video_link}
     = @public_work.video_link
 
-= button_to 'Перейти к загрузке портфолио', "/success", :class => "btn btn-large btn-success"
+= button_to 'Готово!', "/success", :class => "btn btn-large btn-success"

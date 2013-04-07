@@ -6,5 +6,6 @@
   - @public_works.each do |pw|
     %tr
       %td= pw.title
-      %td= link_to 'Показать', user
+      %td= pw.user.first_name + pw.user.middle_name
+      %td= link_to 'Показать', pw
     %br
