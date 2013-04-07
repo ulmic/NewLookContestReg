@@ -3,13 +3,13 @@
 - else
   %p
     %b Ф.И.О 
-    = @user.first_name + " " + @user.middle_name + " " + @user.last_name
+    = @title
   %p  
     %b Дата рождения 
     = @user.birth_date 
   %p  
     %b Муниципальное образование 
-    = @district.title
+    = @user.district.title
   %p  
     %b Место учёбы. Учебное заведение:  
     = @user.school
