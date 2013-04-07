@@ -1,0 +1,9 @@
+class DeleteDistrictFromUsers < ActiveRecord::Migration
+  def up
+    remove_column :users, :district
+    add_column :users, :district_id
+  end
+
+  def down
+  end
+end
