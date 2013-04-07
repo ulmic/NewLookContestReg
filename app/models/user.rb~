@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
-  attr_accessible :birth_date, :building, :city, :district, :email, :first_name, :flat, :group, :home_phone, :house, :icq, :job, :last_name, 
-                  :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte, :filename, :image, :events, :honors, :media, :portfolio
+  attr_accessible :birth_date, :building, :city, :district, :email, :first_name, :flat, :group, :home_phone, :house, :icq, :job, 
+                   :last_name, :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte, :filename, :image, :events, :honors, :media, :portfolio
 
-  has_one :district
+  belongs_to :district
   has_many :public_works
   has_attached_file :portfolio
 
