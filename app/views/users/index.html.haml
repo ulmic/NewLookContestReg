@@ -8,6 +8,6 @@
     %table
     - @users.each do |user|
       %tr
-        %td= user.first_name + user.middle_name + user.last_name
+        %td= user.first_name + " " + user.middle_name + " " + user.last_name
         %td= link_to 'Показать', user
       %br

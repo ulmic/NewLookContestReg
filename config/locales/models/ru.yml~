@@ -27,6 +27,7 @@ ru:
         honors: Награды
         media: СМИ, в которых публиковался
         building: Строение
+        portfolio: Портфолио
       public_work:
         title: Название
         text: Текст работы
