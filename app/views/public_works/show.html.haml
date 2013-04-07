@@ -1,4 +1,7 @@
 %p
+  %b Автор
+  = @public_work.user.first_name + " " + @public_work.user.middle_name + " " + @public_work.user.last_name
+%p
   %b Руководитель
   = @public_work.header
 %p  
