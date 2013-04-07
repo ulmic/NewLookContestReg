@@ -9,7 +9,7 @@
     = @user.birth_date 
   %p  
     %b Муниципальное образование 
-    = @district.title
+    = @user.district
   %p  
     %b Место учёбы. Учебное заведение:  
     = @user.school
