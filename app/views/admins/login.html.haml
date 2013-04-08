@@ -1,4 +1,5 @@
-= params[:notice]
+= flash[:notice]
+%br
 - if session[:user_id].nil?
   = form_tag do
     login

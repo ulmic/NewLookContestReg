@@ -86,15 +86,12 @@ class AdminsController < ApplicationController
       if request.post?
         @admin = Admin.find_by_login(params[:login])
         if @admin.nil?
-          flash[:notice] = 'wrong login'
+          flash[:notice] = 'Неверный логин или пароль'
         else
           if @admin.password === params[:password]
             session[:user_id] = @admin.id
-            #respond_to do |format|
-            #  format.html { redirect_to @user }
-            #end
           else
-            flash[:notice] = 'wrong password'
+            flash[:notice] = 'Неверный логин или пароль'
           end
         end
       end
