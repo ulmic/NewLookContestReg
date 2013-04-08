@@ -1,0 +1,7 @@
+.footer
+  %p
+    %a &copy 
+    %a{:href => "http://ulmic.ru"} Молодёжный инициативный центр
+    2013
+    - if session[:user_id] != nil
+      %a{:class => "btn btn-medium btn-success", :href => "/logout"} Выйти из панели администратора

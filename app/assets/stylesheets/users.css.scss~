@@ -35,6 +35,10 @@
 }
 
 .right_align_table {
-  padding-right: 100px;
+  padding-right: 200px;
   text-align: right;
+}
+
+a {
+  margin-top: 50%;
 }

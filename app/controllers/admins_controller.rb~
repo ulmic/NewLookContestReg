@@ -90,9 +90,6 @@ class AdminsController < ApplicationController
         else
           if @admin.password === params[:password]
             session[:user_id] = @admin.id
-            #respond_to do |format|
-            #format.html { redirect_to @user }
-            #end
           else
             flash[:notice] = 'Неверный логин или пароль'
           end

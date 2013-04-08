@@ -56,3 +56,4 @@
   %p
     %b СМИ, в которых публиковался
     = @user.media
+  a{:class => "btn btn-large btn-success", :href => "/users"} Посмотреть пользователей
