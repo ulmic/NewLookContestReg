@@ -1,4 +1,7 @@
 %p
+  %b Автор
+  = @public_work.user.first_name + " " + @public_work.user.middle_name + " " + @public_work.user.last_name
+%p
   %b Руководитель
   = @public_work.header
 %p  
@@ -21,4 +24,4 @@
   %a{:href => @public_work.video_link}
     = @public_work.video_link
 
-= button_to 'Готово!', "/success", :class => "btn btn-large btn-success"
+%a{:class => "btn btn-large btn-success", :href => "/public_works"} Посмотреть пользователей

@@ -1,11 +1,12 @@
 .right_align_table
   %h1
-    Поданные заявки
+    Поданые заявки
   %br
   %table
   - @public_works.each do |pw|
     %tr
       %td= pw.title
-      %td= pw.user.first_name + " " + pw.user.middle_name + " " + pw.user.last_name
+      %td
+        %b= pw.user.first_name + " " + pw.user.middle_name + " " + pw.user.last_name
       %td= link_to 'Показать', pw
     %br
