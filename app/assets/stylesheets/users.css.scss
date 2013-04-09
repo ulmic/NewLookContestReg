@@ -38,3 +38,11 @@
   padding-right: 200px;
   text-align: right;
 }
+
+.field textarea {
+  height: 100px;
+}
+
+.field textarea:focus {
+  height: 300px;
+}

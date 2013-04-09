@@ -39,6 +39,10 @@
   text-align: right;
 }
 
-a {
-  margin-top: 50%;
+.field textarea {
+  height: 100px;
+}
+
+.field textarea:focus {
+  height: 500px;
 }
