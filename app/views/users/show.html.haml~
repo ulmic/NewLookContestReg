@@ -44,7 +44,6 @@
     %a{:href => @user.vkontakte} 
       = @user.vkontakte
     %b Ник в Твиттере
-    
     %a{:href => @user.twitter} 
       = @user.twitter
   %p
@@ -56,4 +55,5 @@
   %p
     %b СМИ, в которых публиковался
     = @user.media
-  a{:class => "btn btn-large btn-success", :href => "/users"} Посмотреть пользователей
+  %p
+    %a{:class => "btn btn-medium btn-success", :href => @user.portfolio.url} Скачать портфолио
