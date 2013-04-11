@@ -9,15 +9,11 @@
     .public_field
       = f.input :header
       = f.input :header_coordinates
-      = f.label :nomination
-      %select{ :name => :nomination }
-        - ["Репортаж","Новость","Интервью","Статья","Обзор"].each do |df|
-          %option{:value => df, :selected => df == 0} 
-            = df
+      = f.association :nomination, as: :select, label_method: :title, value_method: :id
       = f.input :title, :class => :span8
       = f.label :annotation
       = f.text_area :annotation, :rows => 5, :class => :span8
       = f.label :text
-      = f.text_area :text, :rows => 20, :class => :span8
+      = f.text_area :text, :rows => 20, :class => :span8, :placeholder => "Текст вашей работы"
       = f.input :video_link, :placeholder => "вставлять ссылку, если имеется видео-материал"
       = f.submit "Добавить", :class => "btn btn-large btn-success"

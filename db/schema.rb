@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407184648) do
+ActiveRecord::Schema.define(:version => 20130411140849) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -26,10 +26,16 @@ ActiveRecord::Schema.define(:version => 20130407184648) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "nominations", :force => true do |t|
+    t.string   "title"
+    t.string   "describe"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "public_works", :force => true do |t|
     t.string   "header"
     t.string   "header_coordinates"
-    t.string   "nomination"
     t.string   "title"
     t.string   "annotation"
     t.integer  "user_id"
@@ -37,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20130407184648) do
     t.datetime "updated_at",         :null => false
     t.string   "text"
     t.string   "video_link"
+    t.integer  "nomination_id"
   end
 
   create_table "users", :force => true do |t|

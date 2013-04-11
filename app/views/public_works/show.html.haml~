@@ -24,4 +24,4 @@
   %a{:href => @public_work.video_link}
     = @public_work.video_link
 
-%a{:class => "btn btn-large btn-success", :href => "/public_works"} Посмотреть пользователей
+%a{:class => "btn btn-large btn-success", :href => "/public_works"} Вернуться к списку работ
