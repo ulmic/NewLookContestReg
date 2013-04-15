@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
                    :last_name, :middle_name, :mobile_phone, :role, :school, :street, :twitter, :vkontakte, :filename, :image, :events, :honors, :media, :portfolio
 
   belongs_to :district
-  has_many :public_works
+  has_one :public_work
   has_attached_file :portfolio
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

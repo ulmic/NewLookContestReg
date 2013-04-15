@@ -15,7 +15,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @title = @user.first_name + " " + @user.middle_name + " " + @user.last_name
-    @district = District.find_by_id(@user.district.id)
     respond_to do |format|
       format.html # show.html.haml
       format.json { render json: @user }
