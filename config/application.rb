@@ -8,6 +8,7 @@ end
 
 module NLCR
   class Application < Rails::Application
+    config.autoload_paths += %W(#{config.root}/lib)
     config.i18n.default_locale = :ru
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.encoding = "utf-8"
