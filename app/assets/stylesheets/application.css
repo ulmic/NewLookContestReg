@@ -4,7 +4,6 @@
 */
 
 body {
-  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -39,4 +38,13 @@ body {
 
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.pulldown_logo {
+  width: 5%;
+  min-width: 100px;
+  min-height: 200px;
+  height: 10%;
+  margin-left: 55%;
+  background-color: red;
 }
