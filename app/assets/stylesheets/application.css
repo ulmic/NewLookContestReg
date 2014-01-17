@@ -3,8 +3,18 @@
  = require_tree .
 */
 
+@font-face {
+  font-family: micfont;
+  src: url(/fonts/PFSquareSansPro-Regular.ttf);
+}
+
 body {
+  font-family: micfont;
   padding-bottom: 40px;
+}
+
+.micfont {
+  font-family: micfont;
 }
 
 .container-narrow {

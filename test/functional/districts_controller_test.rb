@@ -2,13 +2,13 @@ require 'test_helper'
 
 class DistrictsControllerTest < ActionController::TestCase
   setup do
-    @district = districts(:one)
+    @district = create :district
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:districts)
+    assert_not_nil assigns :districts
   end
 
   test "should get new" do
@@ -21,7 +21,7 @@ class DistrictsControllerTest < ActionController::TestCase
       post :create, district: { title: @district.title }
     end
 
-    assert_redirected_to district_path(assigns(:district))
+    assert_redirected_to district_path assigns :district
   end
 
   test "should show district" do
@@ -36,7 +36,7 @@ class DistrictsControllerTest < ActionController::TestCase
 
   test "should update district" do
     put :update, id: @district, district: { title: @district.title }
-    assert_redirected_to district_path(assigns(:district))
+    assert_redirected_to district_path assigns :district
   end
 
   test "should destroy district" do
