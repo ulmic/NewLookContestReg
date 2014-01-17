@@ -56,5 +56,9 @@ body {
   min-height: 200px;
   height: 10%;
   margin-left: 55%;
-  background-color: red;
+  background-color: #381414;
+}
+
+.pulldown_logo img {
+  margin-top: 50%;
 }
