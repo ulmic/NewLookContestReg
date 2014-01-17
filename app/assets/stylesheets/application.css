@@ -10,6 +10,8 @@
 
 body {
   font-family: micfont;
+  background-image: url('background.jpg');
+  background-size: 100%;
   padding-bottom: 40px;
 }
 
