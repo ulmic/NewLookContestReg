@@ -5,14 +5,9 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    .genry
+      = image_tag 'genry.png'
     .pulldown_logo
       = image_tag 'logo.png'
-    .genry
-    .container-narrow
-      .masthead
-        %h4.muted
-          X конкурс начинающих журналистов "Новый взгляд"
-      %hr
-      = yield
-      %hr
-      = render "layouts/footer"
+    = yield
+    = render "layouts/footer"
