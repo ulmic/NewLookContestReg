@@ -66,17 +66,14 @@ ActiveRecord::Schema.define(:version => 20130411140849) do
     t.string   "email"
     t.string   "vkontakte"
     t.string   "twitter"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.string   "filename"
     t.string   "image"
     t.string   "events"
     t.string   "honors"
     t.string   "media"
-    t.string   "portfolio_file_name"
-    t.string   "portfolio_content_type"
-    t.integer  "portfolio_file_size"
-    t.datetime "portfolio_updated_at"
+    t.text     "portfolio"
     t.integer  "district_id"
   end
 

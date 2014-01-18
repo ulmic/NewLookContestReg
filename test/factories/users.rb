@@ -8,6 +8,6 @@ FactoryGirl.define do
     group { generate :string }
     mobile_phone { generate :string }
     email
-    portfolio { generate :string }
+    portfolio { generate :file }
   end
 end
