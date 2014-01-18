@@ -30,17 +30,6 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @user
-    assert_response :success
-  end
-
-  test "should update user" do
-    attributes = attributes_for :user
-    put :update, id: @user, user: attributes
-    assert_redirected_to user_path assigns :user
-  end
-
   test "should destroy user" do
     assert_difference('User.count', -1) do
       delete :destroy, id: @user
