@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20130411140849) do
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
     t.string   "filename"
+    t.string   "image"
     t.string   "events"
     t.string   "honors"
     t.string   "media"
