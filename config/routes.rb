@@ -3,9 +3,10 @@ NLCR::Application.routes.draw do
 
   get "users/upload_resume"
 
+  resources :public_works, only: :index
   resources :users do
     member do
-      resources :public_works
+      resources :public_works, except: :index
     end
   end
 
