@@ -28,7 +28,8 @@ class User < ActiveRecord::Base
 
   belongs_to :district
   has_one :public_work
-  has_attached_file :portfolio
+  mount_uploader :portfolio, PortfolioUploader
+
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :first_name, :presence => true,

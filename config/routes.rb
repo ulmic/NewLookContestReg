@@ -1,10 +1,14 @@
 NLCR::Application.routes.draw do
   root to: "welcome#index"
-  resources :public_works
 
   get "users/upload_resume"
 
-  resources :users
+  resources :public_works, only: :index
+  resources :users do
+    member do
+      resources :public_works, except: :index
+    end
+  end
 
   match "admin" => "admins#login"
   match "logout" => "admins#logout"

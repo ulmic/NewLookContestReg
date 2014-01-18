@@ -3,6 +3,7 @@ require 'test_helper'
 class PublicWorksControllerTest < ActionController::TestCase
   setup do
     @public_work = create :public_work
+    @user = create :user
   end
 
   test "should get index" do
@@ -12,31 +13,18 @@ class PublicWorksControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, id: @user
     assert_response :success
   end
 
   test "should create public_work" do
-    assert_difference('PublicWork.count') do
-      post :create, public_work: { annotation: @public_work.annotation, header: @public_work.header, header_coordinates: @public_work.header_coordinates, nomination: @public_work.nomination, title: @public_work.title, user_id: @public_work.user_id }
-    end
-
-    assert_redirected_to public_work_path(assigns(:public_work))
+    attributes = attributes_for :public_work
+    post :create, public_work: attributes, id: @user
   end
 
   test "should show public_work" do
     get :show, id: @public_work
     assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, id: @public_work
-    assert_response :success
-  end
-
-  test "should update public_work" do
-    put :update, id: @public_work, public_work: { annotation: @public_work.annotation, header: @public_work.header, header_coordinates: @public_work.header_coordinates, nomination: @public_work.nomination, title: @public_work.title, user_id: @public_work.user_id }
-    assert_redirected_to public_work_path(assigns(:public_work))
   end
 
   test "should destroy public_work" do

@@ -8,8 +8,9 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'sqlite3'
 gem 'validate_url'
-gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'validates'
+gem 'carrierwave'
+gem 'rmagick'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
