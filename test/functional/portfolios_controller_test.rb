@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PortfoliosControllerTest < ActionController::TestCase
   setup do
-    @portfolio = portfolios(:one)
+    @portfolio = create :portfolio
   end
 
   test "should get index" do
