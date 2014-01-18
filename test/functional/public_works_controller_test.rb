@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PublicWorksControllerTest < ActionController::TestCase
   setup do
-    @public_work = public_works(:one)
+    @public_work = create :public_work
   end
 
   test "should get index" do

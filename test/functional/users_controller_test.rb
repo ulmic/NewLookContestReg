@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
   setup do
-    @user = create :users
+    @user = create :user
   end
 
   test "should get index" do
