@@ -13,15 +13,13 @@ class PublicWorksController < ApplicationController
   end
 
   def create
-    @public_work = User.find(cookies[:current_user]).public_works.build(params[:public_work])
-
+    @public_work = PublicWork.new params[:public_work]
     if @public_work.save
       redirect_to @public_work
     else
       render action: "new"
     end
   end
-
 
   def destroy
     @public_work = PublicWork.find(params[:id])
