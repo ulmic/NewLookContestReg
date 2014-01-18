@@ -14,14 +14,20 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding-bottom: 40px;
   background-position: fixed;
 }
 
 .genry {
   position: fixed;
-  width: 100%;
+  margin-left: 20%;
+  min-width: 25%;
   height: 100%;
+  bottom: 0px;
+}
+
+.genry img {
+  position: absolute;
+  bottom: 0px;
 }
 
 .micfont {
@@ -64,7 +70,7 @@ body {
 .pulldown_logo {
   width: 5%;
   min-width: 100px;
-  min-height: 200px;
+  min-height: 180px;
   height: 10%;
   margin-left: 55%;
   background-color: #381414;
