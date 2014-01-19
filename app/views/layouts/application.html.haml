@@ -5,9 +5,14 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .genry
-      = image_tag 'genry.png'
+    %ul#scene
+      %li.layer{ data: { depth: 0.40 }} 
+        .genry
+          = image_tag 'genry.png'
+      %li.layer{ data: { depth: 0.0 }}
     .pulldown_logo
       = image_tag 'logo.png'
-    = yield
+    .container
+      = yield
     = render "layouts/footer"
+    = javascript_include_tag "jquery.parallax"

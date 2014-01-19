@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function () {
+  $('#scene').parallax({
+    calibrateX: true,
+    calibrateY: true,
+    scalarY: 0
+  });
+});
