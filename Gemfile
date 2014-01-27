@@ -12,6 +12,8 @@ gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'draper'
+gem 'state_machine'
+gem 'usefull_scopes'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
