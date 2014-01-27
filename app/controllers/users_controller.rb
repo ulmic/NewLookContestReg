@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
-  def index
-    @users = User.all
-  end
 
   def show
-    @user = User.find params[:id]
-    @title = @user.first_name + " " + @user.middle_name + " " + @user.last_name
+    @user = User.find(params[:id]).decorate
+    unless current_user_on_page? @user
+      redirect_to not_found_errors_path
+    end
   end
 
   def new
@@ -21,12 +20,6 @@ class UsersController < ApplicationController
     else
         render :new
     end
-  end
-
-  def destroy
-    @user = User.find params[:id]
-    @user.destroy
-    redirect_to users_url
   end
 
 end

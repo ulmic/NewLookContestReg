@@ -13,5 +13,6 @@ require 'factory_girl'
 FactoryGirl.reload
 
 class ActiveSupport::TestCase
+  include AuthHelper
   include FactoryGirl::Syntax::Methods
 end

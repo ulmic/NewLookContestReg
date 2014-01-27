@@ -24,26 +24,45 @@ class User < ActiveRecord::Base
                   :events,
                   :honors,
                   :media,
-                  :portfolio
+                  :portfolio,
+                  :confirm_state
 
   belongs_to :district
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
 
 
-  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :first_name, :presence => true,
-                         :length => { :maximum => 20 }
-  validates :middle_name, :presence => true,
-                          :length => { :maximum => 20 }
-  validates :last_name, :presence => true,
-                          :length => { :maximum => 20 }
-  validates :city, :presence => true
-  validates :school, :presence => true
-  validates :group, :presence => true
-  validates :mobile_phone, :presence => true
-  validates :email, :presence => true,
-                    :format   => { :with => email_regex },
-                    :uniqueness => { :case_sensitive => false }
-  validates :portfolio, :presence => true
+  validates :first_name, presence: true,
+                         length: { maximum: 20 }
+  validates :middle_name, presence: true,
+                          length: { maximum: 20 }
+  validates :last_name, presence: true,
+                          length: { maximum: 20 }
+  validates :city, presence: true
+  validates :school, presence: true
+  validates :group, presence: true
+  validates :mobile_phone, presence: true
+  validates :email, presence: true,
+                    uniqueness: { case_sensitive: false },
+                    email: true
+  validates :portfolio, presence: true
+
+  state_machine :confirm_state, initial: :new do
+    state :new
+    state :accepted
+    state :busted
+    state :reserved
+
+    event :accept do
+      transition [ :new, :reserved ] => :accepted
+    end
+
+    event :bust do
+      transition [ :new, :reserved ] => :busted
+    end
+
+    event :reserve do
+      transition [ :new ] => :reserved
+    end
+  end
 end

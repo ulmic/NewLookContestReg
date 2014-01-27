@@ -5,12 +5,6 @@ class UsersControllerTest < ActionController::TestCase
     @user = create :user
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns :users
-  end
-
   test "should get new" do
     get :new
     assert_response :success
@@ -26,15 +20,9 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should show user" do
+    user_sign_in @user
     get :show, id: @user
     assert_response :success
   end
 
-  test "should destroy user" do
-    assert_difference('User.count', -1) do
-      delete :destroy, id: @user
-    end
-
-    assert_redirected_to users_path
-  end
 end
