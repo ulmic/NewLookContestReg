@@ -25,19 +25,13 @@ button {
   padding: 1% 1%;
   font-family: micfont
   font-size: 40pt
+}
 #scene {
   position: fixed;
   overflow: hidden;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.genry {
-  position: fixed;
-  margin-left: 15%;
-  height: 80%;
-  bottom: 0px;
 }
 
 .genry img {
