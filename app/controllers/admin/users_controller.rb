@@ -36,14 +36,14 @@ class Admin::UsersController < Admin::ApplicationController
 
   def destroy
     @user = User.find params[:id]
-    @user.destroy
+    @user.bust
     redirect_to users_path
   end
 
   def accept
     @user = User.find params[:id]
     @user.accept
-    redirect_to user_path @user
+    redirect_to admin_user_path @user
   end
 
   def reserve
