@@ -11,6 +11,7 @@ gem 'validate_url'
 gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'draper'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

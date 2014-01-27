@@ -45,6 +45,10 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     docile (1.1.1)
+    draper (1.2.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0.3)
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.3.0)
@@ -104,6 +108,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    request_store (1.0.5)
     rmagick (2.13.2)
     sass (3.2.13)
     sass-rails (3.2.6)
@@ -153,6 +158,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
+  draper
   factory_girl_rails
   haml
   haml-rails
