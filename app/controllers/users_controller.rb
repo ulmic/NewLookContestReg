@@ -23,10 +23,4 @@ class UsersController < ApplicationController
     end
   end
 
-  def destroy
-    @user = User.find params[:id]
-    @user.destroy
-    redirect_to users_url
-  end
-
 end
