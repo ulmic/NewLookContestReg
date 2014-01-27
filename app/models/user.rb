@@ -25,7 +25,8 @@ class User < ActiveRecord::Base
                   :honors,
                   :media,
                   :portfolio,
-                  :confirm_state
+                  :confirm_state,
+                  :password
 
   belongs_to :district
   has_one :public_work
@@ -46,6 +47,7 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false },
                     email: true
   validates :portfolio, presence: true
+  validates :password, presence: true, length: { minimum: 3, maximum: 16 }
 
   state_machine :confirm_state, initial: :new do
     state :new

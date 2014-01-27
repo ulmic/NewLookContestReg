@@ -1,4 +1,7 @@
 ru:
+  users:
+    form:
+      this_password_for_sign_in: 'Не меньше 3 символов, не больше 16 символов.'
   date:
     abbr_day_names:
     - Вс
@@ -9,7 +12,7 @@ ru:
     - Пт
     - Сб
     abbr_month_names:
-    - 
+    -
     - янв.
     - февр.
     - марта
@@ -35,7 +38,7 @@ ru:
       long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - января
     - февраля
     - марта
