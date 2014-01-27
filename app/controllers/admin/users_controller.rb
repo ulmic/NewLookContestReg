@@ -49,6 +49,6 @@ class Admin::UsersController < Admin::ApplicationController
   def reserve
     @user = User.find params[:id]
     @user.reserve
-    redirect_to new_admin_reserve_reason_path @user
+    redirect_to admin_user_path @user
   end
 end
