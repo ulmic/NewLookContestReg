@@ -26,15 +26,9 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should show user" do
+    user_sign_in @user
     get :show, id: @user
     assert_response :success
   end
 
-  test "should destroy user" do
-    assert_difference('User.count', -1) do
-      delete :destroy, id: @user
-    end
-
-    assert_redirected_to users_path
-  end
 end

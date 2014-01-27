@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find params[:id]
+    binding.pry
     if current_user_on_page? @user
       @title = @user.first_name + " " + @user.middle_name + " " + @user.last_name
     else

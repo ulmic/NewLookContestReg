@@ -10,4 +10,8 @@ module ApplicationHelper
       "#{current_year}"
     end
   end
+
+  def current_user_on_page?(user_to_show)
+    current_user == user_to_show
+  end
 end
