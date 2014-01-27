@@ -5,35 +5,35 @@
       %ul
         - @user.errors.full_messages.each do |msg|
           %li= msg
-  - f.with_options :input_html => {:class => :span6}, :html => { :multipart => true } do |f|
+  - f.with_options input_html: { class: :span6 }, html: { multipart: true } do |f|
     .field
-      = f.input :first_name
-      = f.input :middle_name
-      = f.input :last_name
-      = f.association :district, as: :select, label_method: :title, value_method: :id 
+      = f.input :first_name, as: :string
+      = f.input :middle_name, as: :string
+      = f.input :last_name, as: :string
+      = f.association :district, as: :select, label_method: :title, value_method: :id
       = f.label :birth_date
-      = f.date_select :birth_date, :start_year => 1991, :end_year => 1999, :use_month_numbers => true 
-      = f.input :school
-      = f.input :group
-      = f.input :job
-      = f.input :role
-      = f.input :city
-      = f.input :street
-      = f.input :house
-      = f.input :building
-      = f.input :flat
-      = f.input :mobile_phone, :placeholder => "Телефон обязателен для связи с организаторами"
-      = f.input :home_phone
-      = f.input :icq
-      = f.input :email, :placeholder => "Email обязателен для получения информации и конкурсе"
-      = f.input :vkontakte
-      = f.input :twitter
+      = f.date_select :birth_date, start_year: 1991, end_year: 1999, use_month_numbers: true
+      = f.input :school, as: :string
+      = f.input :group, as: :string
+      = f.input :job, as: :string
+      = f.input :role, as: :string
+      = f.input :city, as: :string
+      = f.input :street, as: :string
+      = f.input :house, as: :string
+      = f.input :building, as: :string
+      = f.input :flat, as: :string
+      = f.input :mobile_phone, placeholder: "Телефон обязателен для связи с организаторами", as: :string
+      = f.input :home_phone, as: :string
+      = f.input :icq, as: :string
+      = f.input :email, placeholder: "Email обязателен для получения информации и конкурсе", as: :string
+      = f.input :vkontakte, as: :string
+      = f.input :twitter, as: :string
       = f.label :events
-      = f.text_area :events, :class => :span6, :row => 5, :placeholder => "Напишите мероприятия журналистской или иной направленности, в которых принимали участие"
+      = f.text_area :events, class: :span6, row: 5, placeholder: "Напишите мероприятия журналистской или иной направленности, в которых принимали участие"
       = f.label :honors
-      = f.text_area :honors, :class => :span6, :row => 5, :placeholder => "Напишите свои достижения в области журналистики и публицистики"
+      = f.text_area :honors, class: :span6, row: 5, placeholder: "Напишите свои достижения в области журналистики и публицистики"
       = f.label :media
-      = f.text_area :media, :class => :span6, :row => 5, :placeholder => "В случае электронных СМИ со ссылками на конкретные работы"
+      = f.text_area :media, class: :span6, row: 5, placeholder: "В случае электронных СМИ со ссылками на конкретные работы"
       %hr
       = f.label :portfolio
       = f.file_field :portfolio
@@ -41,4 +41,4 @@
       %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
       %hr
     .actions
-      = f.submit "Отправить", :class => "btn btn-large btn-success"
+      = f.submit "Отправить", class: "btn btn-large btn-success"
