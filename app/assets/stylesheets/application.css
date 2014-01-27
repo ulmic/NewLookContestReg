@@ -26,6 +26,7 @@ button {
   font-family: micfont
   font-size: 40pt
 }
+
 #scene {
   position: fixed;
   overflow: hidden;
@@ -36,8 +37,15 @@ button {
 
 .genry img {
   position: absolute;
-  height: 100%;
+  margin-left: 15%;
+  height: 90%;
   bottom: 0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
 }
 
 .container {
