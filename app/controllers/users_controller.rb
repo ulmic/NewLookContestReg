@@ -5,7 +5,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find params[:id]
-    @title = @user.first_name + " " + @user.middle_name + " " + @user.last_name
+    if current_user_on_page? @user
+      @title = @user.first_name + " " + @user.middle_name + " " + @user.last_name
+    else
+      redirect_to not_found_errors_path
+    end
   end
 
   def new
