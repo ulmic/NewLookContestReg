@@ -1,59 +1,56 @@
-- if session[:user_id].nil?
-  = render 'page_404'
-- else
-  %p
-    %b Ф.И.О 
-    = @title
-  %p  
-    %b Дата рождения 
-    = @user.birth_date 
-  %p  
-    %b Муниципальное образование 
-    = @user.district.title
-  %p  
-    %b Место учёбы. Учебное заведение:  
-    = @user.school
-    %b Группа (класс)
-    = @user.group
-  %p
-    %b Место работы: 
-    = @user.job
-    %b Должность 
-    = @user.role
-  %p
-    %b Адрес: 
-    = @user.city
-    %b  ул. 
-    = @user.street
-    %b  д.
-    = @user.house
-    %b  строение
-    = @user.building
-    %b  квартира
-    = @user.flat
-  %p
-    %b Контакты: Мобильный телефон 
-    = @user.mobile_phone
-    %b  Домашний телефон 
-    = @user.home_phone
-    %b  ICQ 
-    = @user.icq
-    %b  Email 
-    = @user.email
-    %b  Ник ВКонтакте 
-    %a{:href => @user.vkontakte} 
-      = @user.vkontakte
-    %b Ник в Твиттере
-    %a{:href => @user.twitter} 
-      = @user.twitter
-  %p
-    %b Мероприятия, в которых принимал участие 
-    = @user.events
-  %p  
-    %b Заслуги, награды
-    = @user.honors
-  %p
-    %b СМИ, в которых публиковался
-    = @user.media
-  %p
-    %a{:class => "btn btn-medium btn-success", :href => @user.portfolio.url} Скачать портфолио
+%p
+  %b Ф.И.О
+  = @title
+%p
+  %b Дата рождения
+  = @user.birth_date
+%p
+  %b Муниципальное образование
+  = @user.district.title
+%p
+  %b Место учёбы. Учебное заведение:
+  = @user.school
+  %b Группа (класс)
+  = @user.group
+%p
+  %b Место работы:
+  = @user.job
+  %b Должность
+  = @user.role
+%p
+  %b Адрес:
+  = @user.city
+  %b  ул.
+  = @user.street
+  %b  д.
+  = @user.house
+  %b  строение
+  = @user.building
+  %b  квартира
+  = @user.flat
+%p
+  %b Контакты: Мобильный телефон
+  = @user.mobile_phone
+  %b  Домашний телефон
+  = @user.home_phone
+  %b  ICQ
+  = @user.icq
+  %b  Email
+  = @user.email
+  %b  Ник ВКонтакте
+  %a{ href: @user.vkontakte }
+    = @user.vkontakte
+  %b Ник в Твиттере
+  %a{ href: @user.twitter }
+    = @user.twitter
+%p
+  %b Мероприятия, в которых принимал участие
+  = @user.events
+%p
+  %b Заслуги, награды
+  = @user.honors
+%p
+  %b СМИ, в которых публиковался
+  = @user.media
+%p
+  %a{ class: "btn btn-medium btn-success", href: @user.portfolio } Скачать портфолио
