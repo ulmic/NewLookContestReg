@@ -1,26 +1,28 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :first_name
-      t.string :middle_name
-      t.string :last_name
+      t.text :first_name
+      t.text :middle_name
+      t.text :last_name
       t.integer :district
       t.date :birth_date
-      t.string :school
-      t.string :group
-      t.string :job
-      t.string :role
-      t.string :city
-      t.string :street
-      t.string :house
-      t.string :building
-      t.string :flat
-      t.string :mobile_phone
-      t.string :home_phone
-      t.string :icq
-      t.string :email
-      t.string :vkontakte
-      t.string :twitter
+      t.text :school
+      t.text :group
+      t.text :job
+      t.text :role
+      t.text :city
+      t.text :street
+      t.text :house
+      t.text :building
+      t.text :flat
+      t.text :mobile_phone
+      t.text :home_phone
+      t.text :icq
+      t.text :email
+      t.text :vkontakte
+      t.text :twitter
+      t.string :confirm_state
+      t.string :password
 
       t.timestamps
     end

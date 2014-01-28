@@ -5,9 +5,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .genry
-      = image_tag 'genry.png'
-    .pulldown_logo
-      = image_tag 'logo.png'
-    = yield
+    .offset3
+      = yield
     = render "layouts/footer"
+    = javascript_include_tag "jquery.parallax"

@@ -1,11 +1,19 @@
 class PublicWork < ActiveRecord::Base
-  attr_accessible :annotation, :header, :header_coordinates, :nomination_id, :title, :user_id, :text, :video_link
+  attr_accessible :annotation,
+                  :header,
+                  :header_coordinates,
+                  :nomination_id,
+                  :title,
+                  :user_id,
+                  :text,
+                  :video_link
 
   belongs_to :user
   belongs_to :nomination
-  validates :title, :presence => true
-  validates :nomination, :presence => true
-  validates :user_id, :presence => true
-  validates :text, :presence => true
-  validates :video_link, :url => { :allow_blank => true, :allow_nil => true }
+
+  validates :title, presence: true
+  validates :nomination, presence: true
+  validates :user_id, presence: true
+  validates :text, presence: true
+  validates :video_link, url: { allow_blank: true, allow_nil: true }
 end

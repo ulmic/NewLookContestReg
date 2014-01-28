@@ -5,15 +5,16 @@
       %ul
         - @public_work.errors.full_messages.each do |msg|
           %li= msg
-  - f.with_options :input_html => {:class => :span8} do |f|
+  - f.with_options input_html: {class: :span8} do |f|
     .public_field
       = f.input :header
       = f.input :header_coordinates
       = f.association :nomination, as: :select, label_method: :title, value_method: :id
-      = f.input :title, :class => :span8
+      = f.input :title, class: :span8
       = f.label :annotation
-      = f.text_area :annotation, :rows => 5, :class => :span8
+      = f.text_area :annotation, rows: 5, class: :span8
       = f.label :text
-      = f.text_area :text, :rows => 20, :class => :span8, :placeholder => "Текст вашей работы"
-      = f.input :video_link, :placeholder => "вставлять ссылку, если имеется видео-материал"
-      = f.submit "Добавить", :class => "btn btn-large btn-success"
+      = f.text_area :text, rows: 20, class: :span8, placeholder: "Текст вашей работы"
+      = f.input :video_link, placeholder: "вставлять ссылку, если имеется видео-материал"
+      = f.input :user_id, as: :hidden
+      = f.submit "Добавить", class: "btn btn-large btn-success"
