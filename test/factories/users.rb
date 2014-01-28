@@ -7,7 +7,7 @@ FactoryGirl.define do
     city { generate :string }
     school { generate :string }
     group { generate :string }
-    mobile_phone { generate :string }
+    mobile_phone { generate :phone }
     email
     portfolio { generate :file }
     password
