@@ -1,3 +1,7 @@
+
+%h1
+  Данные вашей заявки
+%hr
 %p
   %b Ф.И.О
   = @user.title
@@ -31,17 +35,22 @@
 %p
   %b Контакты: Мобильный телефон
   = @user.mobile_phone
+%p
   %b  Домашний телефон
   = @user.home_phone
+%p
   %b  ICQ
   = @user.icq
+%p
   %b  Email
   = @user.email
+%p
   %b  Ник ВКонтакте
-  %a{:href => @user.vkontakte}
+  %a{ href: @user.vkontakte }
     = @user.vkontakte
+%p
   %b Ник в Твиттере
-  %a{:href => @user.twitter}
+  %a{ href: @user.twitter }
     = @user.twitter
 %p
   %b Мероприятия, в которых принимал участие
@@ -53,4 +62,4 @@
   %b СМИ, в которых публиковался
   = @user.media
 %p
-  %a{:class => "btn btn-medium btn-success", :href => @user.portfolio.url} Скачать портфолио
+  %a{ class: "btn btn-medium btn-success", href: @user.portfolio.url } Скачать портфолио
