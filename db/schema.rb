@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20130411140849) do
     t.text     "vkontakte"
     t.text     "twitter"
     t.string   "confirm_state"
+    t.string   "password"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.string   "filename"

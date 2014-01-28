@@ -10,5 +10,6 @@ FactoryGirl.define do
     mobile_phone { generate :string }
     email
     portfolio { generate :file }
+    password
   end
 end

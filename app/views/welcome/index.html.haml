@@ -1,4 +1,4 @@
-#scene
+.welcome_content#scene
   %ul
     %li.layer{ data: { depth: 0.10 }}
       .pulldown_logo
@@ -13,10 +13,15 @@
           "Новый взгляд"
       .com_title.italic.micfont
         Участвуешь в конкурсе?
-      .com_title
-        %button
-          ЗАРЕГИСТРИРОВАТЬСЯ
-        %br
-        %small
-          %a
-            см. Положение
+      - unless user_signed_in?
+        .com_title
+          %a.button{ href: new_user_path }
+            ЗАРЕГИСТРИРОВАТЬСЯ
+        .com_title
+          %small
+            %a
+              см. Положение
+      - else
+        .com_title
+          %a.button{ href: user_path(current_user) }
+            Посмотри свой профиль

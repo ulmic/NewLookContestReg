@@ -28,6 +28,7 @@ ru:
         media: СМИ, в которых публиковался
         building: Строение
         portfolio: Портфолио
+        password: Пароль
       public_work:
         title: Название
         text: Текст работы

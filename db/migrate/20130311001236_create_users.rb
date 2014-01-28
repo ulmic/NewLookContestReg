@@ -22,6 +22,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :vkontakte
       t.text :twitter
       t.string :confirm_state
+      t.string :password
 
       t.timestamps
     end
