@@ -6,3 +6,5 @@ ru:
           attributes:
             email:
               email: имеет неверный формат
+            mobile_phone:
+              phone: имеет неверный формат

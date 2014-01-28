@@ -42,7 +42,8 @@ class User < ActiveRecord::Base
   validates :city, presence: true
   validates :school, presence: true
   validates :group, presence: true
-  validates :mobile_phone, presence: true
+  validates :mobile_phone, presence: true,
+                           phone: true
   validates :email, presence: true,
                     uniqueness: { case_sensitive: false },
                     email: true
