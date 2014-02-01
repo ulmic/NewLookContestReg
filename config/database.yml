@@ -10,8 +10,9 @@ test:
   pool: 5
   timeout: 5000
 
-#production:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: NLCR_production
-#  pool: 5
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: newlook
+  pool: 5
+  user: newlook
