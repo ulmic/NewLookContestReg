@@ -16,3 +16,4 @@
 .vagrant
 *.sqlite3-journal
 .directory
+*.sqlite3
