@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
                   :group,
                   :home_phone,
                   :house,
-                  :icq,
+                  :skype,
                   :job,
                   :last_name,
                   :middle_name,
@@ -31,7 +31,6 @@ class User < ActiveRecord::Base
   belongs_to :district
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
-
 
   validates :first_name, presence: true,
                          length: { maximum: 20 }
