@@ -1,5 +1,5 @@
 = simple_form_for @user do |f|
-  = if @user.errors.any?
+  - if @user.errors.any?
     #error_explanation
       %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
       %ul
@@ -11,8 +11,7 @@
       = f.input :middle_name
       = f.input :last_name
       = f.association :district, as: :select, label_method: :title, value_method: :id
-      = f.label :birth_date
-      = f.date_select :birth_date, start_year: 1991, end_year: 1999, use_month_numbers: true
+      = f.input :birth_date, start_year: 1991, end_year: 1999, input_html: { class: :span2 }
       = f.input :school
       = f.input :group
       = f.input :job
@@ -24,7 +23,7 @@
       = f.input :flat
       = f.input :mobile_phone, placeholder: "Телефон обязателен для связи с организаторами"
       = f.input :home_phone
-      = f.input :icq
+      = f.input :skype
       = f.input :email, placeholder: "Email обязателен для получения информации и конкурсе"
       = f.input :vkontakte
       = f.input :twitter
