@@ -10,8 +10,7 @@
       = f.input :first_name, as: :string
       = f.input :middle_name, as: :string
       = f.input :last_name, as: :string
-      = f.label :birth_date
-      = f.date_select :birth_date, start_year: 1991, end_year: 1999, use_month_numbers: true
+      = f.input :birth_date, start_year: 1991, end_year: 1999, input_html: { class: :span2 }
       = f.input :school, as: :string
       = f.input :group, as: :string
       = f.input :job, as: :string
@@ -23,8 +22,7 @@
       = f.input :building, as: :string
       = f.input :flat, as: :string
       = f.input :mobile_phone, placeholder: "Телефон обязателен для связи с организаторами", as: :string
-      = f.input :home_phone, as: :string
-      = f.input :icq, as: :string
+      = f.input :skype, as: :string
       = f.input :email, placeholder: "Email обязателен для получения информации и конкурсе", as: :string
       = f.input :password, as: :string, placeholder: t('.this_password_for_sign_in')
       = f.input :vkontakte, as: :string
