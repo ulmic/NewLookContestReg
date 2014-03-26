@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130411140849) do
+ActiveRecord::Schema.define(:version => 20140326194126) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(:version => 20130411140849) do
     t.text     "flat"
     t.text     "mobile_phone"
     t.text     "home_phone"
-    t.text     "icq"
     t.text     "email"
     t.text     "vkontakte"
     t.text     "twitter"
@@ -77,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20130411140849) do
     t.string   "media"
     t.text     "portfolio"
     t.integer  "district_id"
+    t.text     "skype"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
