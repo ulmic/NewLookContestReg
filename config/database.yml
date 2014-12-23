@@ -1,17 +1,25 @@
+default: &default
+  username: postgres
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  <<: *default
+  username: develop
+  database: ul_lider_development
+test:
+  adapter: postgresql
+  database: ul_lider_test
   pool: 5
   timeout: 5000
 
-test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+staging:
+  <<: *default
+  username: lider
+  database: ul_lider_staging
 
 production:
-  adapter: sqlite3
-  encoding: unicode
-  database: newlook
-  pool: 5
+  <<: *default
+  username: lider
+  database: ul_lider_production
