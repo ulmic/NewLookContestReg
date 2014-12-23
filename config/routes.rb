@@ -1,6 +1,7 @@
 NLCR::Application.routes.draw do
   root to: "welcome#index"
   resources :public_works, only: :index
+  resources :pages, only: :show
   resources :users do
     member do
       resources :public_works, except: :index

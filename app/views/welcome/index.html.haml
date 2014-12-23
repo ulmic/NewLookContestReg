@@ -16,10 +16,10 @@
       - unless user_signed_in?
         .com_title
           %a.button{ href: new_user_path }
-            ЗАРЕГИСТРИРОВАТЬСЯ
-        .com_title
+            Отправь заявку
+        .com_title.link
           %small
-            %a
+            %a{ href: page_path(:the_competition) }
               см. Положение
       - else
         .com_title
