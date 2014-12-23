@@ -1,34 +1,15 @@
 class User < ActiveRecord::Base
-  attr_accessible :birth_date,
-                  :building,
-                  :city,
-                  :district_id,
-                  :email,
-                  :first_name,
-                  :flat,
-                  :group,
-                  :home_phone,
-                  :house,
-                  :skype,
-                  :job,
-                  :last_name,
-                  :middle_name,
-                  :mobile_phone,
-                  :role,
-                  :school,
-                  :street,
-                  :twitter,
-                  :vkontakte,
-                  :filename,
-                  :image,
-                  :events,
-                  :honors,
-                  :media,
-                  :portfolio,
-                  :confirm_state,
+  attr_accessible :birth_date,      :building,      :city,
+                  :email,           :municipality,  :first_name,
+                  :flat,            :group,         :home_phone,
+                  :house,           :skype,         :job,
+                  :last_name,       :middle_name,   :mobile_phone,
+                  :role,            :school,        :street,
+                  :twitter,         :vkontakte,     :filename,
+                  :image,           :events,        :honors,
+                  :media,           :portfolio,     :confirm_state,
                   :password
 
-  belongs_to :district
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
 
