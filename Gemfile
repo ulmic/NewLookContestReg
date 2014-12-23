@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.17'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
@@ -26,7 +26,7 @@ group :test do
   gem 'minitest'
   gem 'factory_girl_rails', require: false
   gem 'turn'
-  gem 'tconsole'
+  gem 'tconsole', git: "git://github.com/gma/tconsole"
   gem 'pry'
 end
 
@@ -36,5 +36,4 @@ group :production do
   gem 'rvm-capistrano'
   gem 'capi'
   gem 'capistrano_colors'
-  gem 'pg'
 end
