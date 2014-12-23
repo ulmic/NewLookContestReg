@@ -29,6 +29,11 @@ class User < ActiveRecord::Base
                     email: true
   validates :portfolio, presence: true
   validates :password, presence: true, length: { minimum: 3, maximum: 16 }
+  validates :municipality, presence: true
+
+  extend Enumerize
+  include Municipalities
+  enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
 
   state_machine :confirm_state, initial: :new do
     state :new
