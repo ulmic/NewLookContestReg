@@ -46,3 +46,15 @@
 .field textarea:focus {
   height: 300px;
 }
+
+.form {
+  background-image: image-url('form_background.png');
+  margin-left: 10%;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
