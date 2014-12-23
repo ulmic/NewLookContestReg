@@ -1,4 +1,8 @@
 ru:
+  hints:
+    users:
+      new:
+        accept_agreement: "Вы принимаете условия <a href = 'http://informat.ru/pages/privacy'>Пользовательского соглашения</a>."
   users:
     form:
       this_password_for_sign_in: 'Не меньше 3 символов, не больше 16 символов.'

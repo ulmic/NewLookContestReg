@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
                   :twitter,         :vkontakte,     :filename,
                   :image,           :events,        :honors,
                   :media,           :portfolio,     :confirm_state,
-                  :password
+                  :password,        :accept_agreement
 
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
@@ -30,6 +30,7 @@ class User < ActiveRecord::Base
   validates :portfolio, presence: true
   validates :password, presence: true, length: { minimum: 3, maximum: 16 }
   validates :municipality, presence: true
+  validates :accept_agreement, presence: true
 
   extend Enumerize
   include Municipalities

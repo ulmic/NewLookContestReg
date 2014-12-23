@@ -1,3 +1,5 @@
+= javascript_include_tag :users
+
 = simple_form_for @user do |f|
   - if @user.errors.any?
     #error_explanation
@@ -39,5 +41,7 @@
       %br
       %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
       %hr
+      != t('hints.users.new.accept_agreement')
+      = f.input :accept_agreement, as: :boolean
     .actions
-      = f.submit "Отправить", class: "btn btn-large btn-success"
+      = f.submit "Отправить", class: "btn btn-large btn-success", id: :send_request
