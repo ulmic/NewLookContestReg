@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :user do
-    district
     first_name { generate :string }
     middle_name { generate :string }
     last_name { generate :string }
@@ -10,6 +9,7 @@ FactoryGirl.define do
     mobile_phone { generate :phone }
     email
     portfolio { generate :file }
+    municipality { User.enumerized_attributes[:municipality].values.first }
     password
   end
 end

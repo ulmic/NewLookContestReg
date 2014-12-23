@@ -14,6 +14,7 @@ gem 'rmagick'
 gem 'draper'
 gem 'state_machine'
 gem 'usefull_scopes'
+gem 'enumerize'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
