@@ -100,3 +100,7 @@ body {
 .pulldown_logo img {
   margin-top: 50%;
 }
+
+input[type="checkbox"] {
+  width: 100%;
+}

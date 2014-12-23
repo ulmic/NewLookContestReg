@@ -11,5 +11,6 @@ FactoryGirl.define do
     portfolio { generate :file }
     municipality { User.enumerized_attributes[:municipality].values.first }
     password
+    accept_agreement true
   end
 end
