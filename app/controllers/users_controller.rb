@@ -9,7 +9,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @district = District.all
   end
 
   def create

@@ -10,7 +10,7 @@
       = f.input :first_name
       = f.input :middle_name
       = f.input :last_name
-      = f.association :district, as: :select, label_method: :title, value_method: :id
+      = f.input :municipality
       = f.input :birth_date, start_year: 1991, end_year: 1999, input_html: { class: :span2 }
       = f.input :school
       = f.input :group
