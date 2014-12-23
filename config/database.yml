@@ -7,19 +7,19 @@ default: &default
 development:
   <<: *default
   username: develop
-  database: ul_lider_development
+  database: new_vision_development
 test:
   adapter: postgresql
-  database: ul_lider_test
+  database: new_vision_test
   pool: 5
   timeout: 5000
 
 staging:
   <<: *default
-  username: lider
-  database: ul_lider_staging
+  username: informat
+  database: new_vision_staging
 
 production:
   <<: *default
-  username: lider
-  database: ul_lider_production
+  username: informat
+  database: new_vision_production
