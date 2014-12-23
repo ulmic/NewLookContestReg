@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140326194126) do
+ActiveRecord::Schema.define(:version => 20141223201826) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -67,16 +67,17 @@ ActiveRecord::Schema.define(:version => 20140326194126) do
     t.text     "twitter"
     t.string   "confirm_state"
     t.string   "password"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.string   "filename"
     t.string   "image"
     t.string   "events"
     t.string   "honors"
     t.string   "media"
     t.text     "portfolio"
-    t.integer  "district_id"
     t.text     "skype"
+    t.text     "municipality"
+    t.boolean  "accept_agreement"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -6,6 +6,7 @@ NLCR::Application.configure do
   config.assets.compress = true
   config.assets.compile = true
   config.assets.digest = true
+  config.assets.precompile += %w( *.js *.css *.scss *.coffee *.ttf )
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
 end

@@ -1,34 +1,15 @@
 class User < ActiveRecord::Base
-  attr_accessible :birth_date,
-                  :building,
-                  :city,
-                  :district_id,
-                  :email,
-                  :first_name,
-                  :flat,
-                  :group,
-                  :home_phone,
-                  :house,
-                  :skype,
-                  :job,
-                  :last_name,
-                  :middle_name,
-                  :mobile_phone,
-                  :role,
-                  :school,
-                  :street,
-                  :twitter,
-                  :vkontakte,
-                  :filename,
-                  :image,
-                  :events,
-                  :honors,
-                  :media,
-                  :portfolio,
-                  :confirm_state,
-                  :password
+  attr_accessible :birth_date,      :building,      :city,
+                  :email,           :municipality,  :first_name,
+                  :flat,            :group,         :home_phone,
+                  :house,           :skype,         :job,
+                  :last_name,       :middle_name,   :mobile_phone,
+                  :role,            :school,        :street,
+                  :twitter,         :vkontakte,     :filename,
+                  :image,           :events,        :honors,
+                  :media,           :portfolio,     :confirm_state,
+                  :password,        :accept_agreement
 
-  belongs_to :district
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
 
@@ -48,6 +29,12 @@ class User < ActiveRecord::Base
                     email: true
   validates :portfolio, presence: true
   validates :password, presence: true, length: { minimum: 3, maximum: 16 }
+  validates :municipality, presence: true
+  validates :accept_agreement, presence: true
+
+  extend Enumerize
+  include Municipalities
+  enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
 
   state_machine :confirm_state, initial: :new do
     state :new

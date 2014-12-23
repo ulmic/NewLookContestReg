@@ -1,3 +1,5 @@
+= javascript_include_tag :users
+
 = simple_form_for @user do |f|
   - if @user.errors.any?
     #error_explanation
@@ -15,7 +17,7 @@
       = f.input :group, as: :string
       = f.input :job, as: :string
       = f.input :role, as: :string
-      = f.association :district, as: :select, label_method: :title, value_method: :id
+      = f.input :municipality
       = f.input :city, as: :string
       = f.input :street, as: :string
       = f.input :house, as: :string
@@ -39,5 +41,7 @@
       %br
       %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
       %hr
+      != t('hints.users.new.accept_agreement')
+      = f.input :accept_agreement, as: :boolean
     .actions
-      = f.submit "Отправить", class: "btn btn-large btn-success"
+      = f.submit "Отправить", class: "btn btn-large btn-success", id: :send_request

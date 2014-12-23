@@ -6,7 +6,7 @@
       .genry
         = image_tag 'genry.png'
       .com_title.micfont
-        X Конкурс начинающих журналистов
+        XI Конкурс начинающих журналистов
         %h4
           Ульяновской области
         .big_com_title
@@ -16,10 +16,10 @@
       - unless user_signed_in?
         .com_title
           %a.button{ href: new_user_path }
-            ЗАРЕГИСТРИРОВАТЬСЯ
-        .com_title
+            Отправь заявку
+        .com_title.link
           %small
-            %a
+            %a{ href: page_path(:the_competition) }
               см. Положение
       - else
         .com_title
