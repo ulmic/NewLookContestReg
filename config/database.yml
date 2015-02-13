@@ -22,4 +22,6 @@ staging:
 production:
   <<: *default
   username: newlook
+  host: localhost
+  pool: 5
   database: new_vision_production
