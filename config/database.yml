@@ -16,10 +16,10 @@ test:
 
 staging:
   <<: *default
-  username: informat
+  username: newlook
   database: new_vision_staging
 
 production:
   <<: *default
-  username: informat
+  username: newlook
   database: new_vision_production
