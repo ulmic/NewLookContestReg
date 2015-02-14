@@ -14,6 +14,8 @@ gem 'draper'
 gem 'state_machine'
 gem 'usefull_scopes'
 gem 'enumerize'
+gem 'bootswatch-rails'
+gem 'bootstrap-sass'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
