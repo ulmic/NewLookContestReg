@@ -8,7 +8,13 @@
       = t('contest.tradition')
     %h4
       = t('contest.about_money')
+    %h4
+      = t('contest.before_request_read_competition')
+      = link_to '/competition_doc.doc' do
+        = content_tag :span do
+          = t('.competition_doc')
+      \.
   .left-side
-    %h3
+    %h4
       = t('.send_request')
     = render 'users/form'
