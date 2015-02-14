@@ -1,0 +1,14 @@
+.title
+  %h1
+    = t('contest.full_name')
+%hr
+.body
+  .right-side
+    %h4
+      = t('contest.tradition')
+    %h4
+      = t('contest.about_money')
+  .left-side
+    %h3
+      = t('.send_request')
+    = render 'users/form'
