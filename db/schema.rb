@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141223201826) do
+ActiveRecord::Schema.define(:version => 20150214015708) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -57,8 +57,6 @@ ActiveRecord::Schema.define(:version => 20141223201826) do
     t.text     "mobile_phone"
     t.text     "home_phone"
     t.text     "email"
-    t.text     "vkontakte"
-    t.text     "twitter"
     t.string   "confirm_state"
     t.string   "password"
     t.datetime "created_at",       :null => false
