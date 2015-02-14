@@ -17,11 +17,11 @@ gem 'enumerize'
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
 gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 
+gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass', '~> 3.1.1.0'
 
 group :assets do
-  gem 'compass-rails', '1.1.7'
   gem 'sass-rails', '3.2.6'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
