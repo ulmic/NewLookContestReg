@@ -14,8 +14,12 @@ gem 'draper'
 gem 'state_machine'
 gem 'usefull_scopes'
 gem 'enumerize'
-gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
-gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
+
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
+
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'v1.0.0'
+#gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 
 gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'bootswatch-rails'
