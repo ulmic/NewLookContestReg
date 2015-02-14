@@ -1,7 +1,12 @@
 /*
+ *= require bootstrap-datetimepicker
  *= require_self
  *= require_tree .
  */
+
+@import "bootswatch/yeti/variables"
+@import "bootstrap"
+@import "bootswatch/yeti/bootswatch"
 
 @font-face
   font-family: micfont
@@ -19,110 +24,52 @@ body
   background-repeat: no-repeat
   background-position: fixed
 
-h1
-  font-family: bold_mic_font
-  font-size: 60px
-
-.slider
-  width: 100%
-  height: 100%
-  .slide
-    .border
-      z-index: 0
-      margin-top: 0.5%
-      margin-bottom: 5%
-      margin-left: 1%
-      margin-right: 1%
-      width: 97%
-      height: 93%
-      border: 5px solid black
-      border-radius: 4px
-      .contest_title
-        width: 50%
-        float: right
-        text-align: center
-      .logo
-        width: 100px
-        float: right
-        z-index: -999
-        background: linear-gradient(to bottom, rgb(24, 22, 26) 0%, black 100%)
-        color: lightgray
-        font-family: bold_mic_font
-        padding: 2px
-        text-align: center
-        border-radius: 3px
-
-.button
-  background-color: #381414
-  color: white
-  border-color: #381414
-  border-radius: 5px
-  padding: 1% 1%
-  font-family: micfont
-  font-size: 40pt
-
-#scene
-  position: fixed
-  overflow: hidden
-  width: 100%
-  height: 100%
-
-.genry img
-  position: absolute
-  margin-left: 15%
-  height: 90%
-  bottom: 0px
-
-.footer
-  position: fixed
-  bottom: 0px
-  right: 100px
-
-.container
-  margin-top: 10%
-
-.micfont
-  font-family: micfont
-
-.container-narrow
-  margin: 0 auto
-  max-width: 700px
-
-.container-narrow > hr
-  margin: 30px 0
-
-.jumbotron
-  margin: 60px 0
+.title
   text-align: center
+  margin-top: 10px
 
-.jumbotron h1
-  font-size: 72px
-  line-height: 1
+.body
+  .right-side, .left-side
+    width: 49%
+    float: left
+    padding-left: 10px
+  .right-side
+  .left-side
+    border-left: 1px solid lightgray
 
-.jumbotron .btn
-  font-size: 21px
-  padding: 14px 24px
+h1, h2
+  font-family: bold_mic_font
+h3, h4, h5, h6
+  font-family: micfont
+h1
+  font-size: 35px
 
-/* Supporting marketing content */
-.marketing
-  margin: 60px 0
+input[type=checkbox]
+  width: 39px
+  height: 39px
+  float: left
 
-.marketing p + h4
-  margin-top: 28px
+.control-label.boolean
+  padding-top: 15px
+  padding-left: 7px
 
-.pulldown_logo
-  width: 5%
-  min-width: 100px
-  min-height: 180px
-  height: 10%
-  margin-left: 55%
-  background-color: #381414
+.datepicker
+  .btn
+    margin-top: -15px
 
-.pulldown_logo img
-  margin-top: 50%
-
-input[type="checkbox"]
+.actions
+  float: left
   width: 100%
+  margin-top: 7px
+  padding-top: 7px
+  border-top: 1px solid darkgray
 
-.link
-  cursor: pointer
+footer
+  width: 100%
+  float: left
+  margin-top: 20px
+  border-top: 1px solid darkgray
+  margin-bottom: 10px
+  .logo
+    img
+      width: 75px

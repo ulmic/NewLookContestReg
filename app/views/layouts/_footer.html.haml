@@ -1,7 +1,18 @@
-.footer
-  %p
-    %a &copy
-    %a{ href: "http://ulmic.ru" } Молодёжный инициативный центр
-    = copyright_notice_year_range(2013)
-    - if session[:user_id] != nil
-      %a{ class: "btn btn-medium btn-success", href: "/logout" } Выйти
+%footer
+  %br
+    .row-fluid
+      .col-md-1.logo
+        = link_to "http://ulmic.ru" do
+          = image_tag 'main/logo-mic.png'
+      .col-md-4
+        &copy
+        = copyright_notice_year_range 2013
+        = t('contest.organization')
+        %br
+        = link_to 'http://ulmic.ru', 'http://ulmic.ru', target: '_blank'
+        %br
+        = link_to t('application.developers'), 'https://github.com/ulmic', target: '_blank'
+        %br
+        = link_to t('application.github_link'), 'https://github.com/ulmic/NewLookContestReg', target: '_blank'
+      .col-md-3
+        = link_to t('contest.definition'), "/pages/the_competition"
