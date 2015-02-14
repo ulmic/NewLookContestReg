@@ -16,6 +16,8 @@ gem 'usefull_scopes'
 gem 'enumerize'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass'
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
+gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
