@@ -1,13 +1,4 @@
 class PublicWork < ActiveRecord::Base
-  attr_accessible :annotation,
-                  :header,
-                  :header_coordinates,
-                  :nomination_id,
-                  :title,
-                  :user_id,
-                  :text,
-                  :video_link
-
   belongs_to :user
   belongs_to :nomination
 
