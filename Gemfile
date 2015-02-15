@@ -19,8 +19,8 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'v1.0.0'
 #gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 
-gem 'sprockets-rails', '=2.0.0.backport1'
-gem 'bootswatch-rails'
+#1;2Q
+#gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'bootswatch-rails', '~> 3.2.0'
