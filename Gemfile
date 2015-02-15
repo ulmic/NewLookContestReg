@@ -4,14 +4,12 @@ gem 'rails', '4.1.7'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
-gem 'haml'
 gem 'jquery-rails'
-gem 'validate_url'
 gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'draper'
-gem 'state_machine'
+gem 'state_machine', git: 'git://github.com/seuros/state_machine.git'
 gem 'usefull_scopes'
 gem 'enumerize'
 gem 'bootswatch-rails'
@@ -21,10 +19,8 @@ gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 
 group :test do
   gem 'simplecov', require: false
-  gem 'minitest'
   gem 'factory_girl_rails', require: false
-  gem 'turn'
-  gem 'tconsole', git: "git://github.com/gma/tconsole"
+  gem 'tconsole', git: 'git://github.com/ulmic/tconsole', branch: 'rails4'
   gem 'pry'
 end
 
