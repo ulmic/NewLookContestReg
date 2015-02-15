@@ -26,7 +26,7 @@ gem 'bootstrap-sass', '~> 3.1.1.0'
 group :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails', require: false
-  gem 'tconsole', git: 'git://github.com/ulmic/tconsole', branch: 'rails4'
+  gem 'tconsole', github: 'ulmic/tconsole', branch: 'rails4'
   gem 'pry'
 end
 

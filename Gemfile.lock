@@ -16,12 +16,12 @@ GIT
     state_machine (1.2.0)
 
 GIT
-  remote: git://github.com/ulmic/tconsole
-  revision: 7eb7547531bc3fb175a4e19de956b411de427e29
+  remote: git://github.com/ulmic/tconsole.git
+  revision: 73d91f7089f421a12193cc23d5d93c6cf51ab00b
   branch: rails4
 >>>>>>> update gems
   specs:
-    tconsole (1.3.0.pre2)
+    tconsole (2.0.0.pre)
       ansi
       chattyproc (~> 1.0.0)
       term-ansicolor (~> 1.0.7)
