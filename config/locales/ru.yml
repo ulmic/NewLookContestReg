@@ -16,6 +16,7 @@ ru:
   users:
     form:
       this_password_for_sign_in: 'Не меньше 3 символов, не больше 16 символов.'
+      accept_agreement: Принимаю условия пользовательского соглашения
   welcome:
     index:
       send_request: Отправить заявку на конкурс

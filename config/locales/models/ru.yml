@@ -4,9 +4,8 @@ ru:
       user: Пользователь
     attributes:
       user:
-        first_name: Фамилия
-        middle_name: Имя
-        last_name: Отчество
+        first_name: Имя
+        last_name: Фамилия
         birth_date: Дата рождения
         city: Населённый пункт
         phone: Телефон
@@ -29,7 +28,8 @@ ru:
         building: Строение
         portfolio: Портфолио
         password: Пароль
-        accept_agreement: Принимаю условия пользовательского соглашения
+        accept_agreement: Условия пользовательского соглашения
+        patronymic: Отчество
       public_work:
         title: Название
         text: Текст работы

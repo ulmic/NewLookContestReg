@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
 
   validates :first_name, presence: true,
                          length: { maximum: 20 }
-  validates :middle_name, presence: true,
-                          length: { maximum: 20 }
   validates :last_name, presence: true,
+                          length: { maximum: 20 }
+  validates :patronymic, presence: true,
                           length: { maximum: 20 }
   validates :city, presence: true
   validates :school, presence: true

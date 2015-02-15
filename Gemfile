@@ -15,6 +15,7 @@ gem 'enumerize'
 
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
+gem 'russian'
 
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'v1.0.0'
 #gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
@@ -30,6 +31,11 @@ group :assets do
   gem 'coffee-rails'
   gem 'therubyracer'
   gem 'uglifier'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :test do

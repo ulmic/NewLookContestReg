@@ -18,4 +18,7 @@ $(document).ready ->
   $('#user_accept_agreement').change ->
     enable_submit()
     return
+  enable_submit()
+  if $('#user_accept_agreement').prop('checked') == true
+    $('#user_accept_agreement').prop('disabled', true)
   return

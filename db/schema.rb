@@ -9,40 +9,42 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150214015708) do
+ActiveRecord::Schema.define(version: 20150215050052) do
 
-  create_table "admins", :force => true do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "admins", force: true do |t|
     t.string   "login"
     t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "nominations", :force => true do |t|
+  create_table "nominations", force: true do |t|
     t.string   "title"
     t.string   "describe"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "public_works", :force => true do |t|
+  create_table "public_works", force: true do |t|
     t.string   "header"
     t.string   "header_coordinates"
     t.string   "title"
     t.string   "annotation"
     t.integer  "user_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "text"
     t.string   "video_link"
     t.integer  "nomination_id"
   end
 
-  create_table "users", :force => true do |t|
+  create_table "users", force: true do |t|
     t.text     "first_name"
-    t.text     "middle_name"
     t.text     "last_name"
     t.date     "birth_date"
     t.text     "school"
@@ -59,8 +61,8 @@ ActiveRecord::Schema.define(:version => 20150214015708) do
     t.text     "email"
     t.string   "confirm_state"
     t.string   "password"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
     t.string   "filename"
     t.string   "image"
     t.string   "events"
@@ -70,8 +72,9 @@ ActiveRecord::Schema.define(:version => 20150214015708) do
     t.text     "skype"
     t.text     "municipality"
     t.boolean  "accept_agreement"
+    t.text     "patronymic"
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end
