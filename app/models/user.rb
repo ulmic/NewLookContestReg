@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_secure_password validations: false
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
+  mount_uploader :avatar, AvatarUploader
 
   validates :first_name, presence: true,
                          length: { maximum: 20 }
@@ -17,8 +18,6 @@ class User < ActiveRecord::Base
   validates :email, presence: true,
                     uniqueness: { case_sensitive: false },
                     email: true
-  validates :portfolio, presence: true
-  validates :password, presence: true, length: { minimum: 3, maximum: 16 }
   validates :municipality, presence: true
   validates :accept_agreement, presence: true
 

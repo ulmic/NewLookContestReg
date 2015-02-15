@@ -10,7 +10,7 @@ class UserDecorator < Draper::Decorator
   end
 
   def place
-    "#{object.municipality}, #{object.locality}"
+    "#{object.municipality}, #{object.city}"
   end
 
   def school_group
@@ -29,9 +29,9 @@ class UserDecorator < Draper::Decorator
 
   def home_city
     if object.municipality.include? 'г.'
-      "#{object.locality}"
+      "#{object.city}"
     else
-      "#{object.municipality}, #{object.locality}"
+      "#{object.municipality}, #{object.city}"
     end
   end
 
