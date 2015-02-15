@@ -12,7 +12,9 @@ NLCR::Application.routes.draw do
       get :not_found
     end
   end
+  resource :session, only: [:new, :create, :destroy]
   namespace :admin do
+    root to: 'users#index'
     resources :users do
       member do
         put :accept
