@@ -25,3 +25,17 @@ ru:
     users:
       create:
         success: 'Ваша заявка успешно отправлена. Оргкомитет конкурса с вами свяжется'
+  admin:
+    users:
+      index:
+        title: Заявки на конкурс
+        fresh_users: Новые заявки
+        confirmed_users: Подтверждённые
+        busted_users: Забаненные
+  helpers:
+    actions: Действия
+    links:
+      edit: Изменить
+      destroy: Удалить
+      new: Добавить
+    hide: Скрыть

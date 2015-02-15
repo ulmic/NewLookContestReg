@@ -1,12 +1,19 @@
-.right_align_table
-  %h1
-    Поданные заявки
-  %br
-  %table
-  - @users.each do |user|
-    %tr
-      %td= user.decorate.title
-      %td= link_to 'Показать', user
-      %td= link_to 'Журналисткая работа', user.public_work
-      %td= link_to 'Портфолио', user.portfolio.url
-    %br
+= javascript_include_tag :tabs
+= stylesheet_link_tag :tabs
+
+.page-header
+  %h1=t '.title'
+#tabs
+  %ul.nav.nav-tabs{ role: :tablist }
+    %li
+      = link_to "#{t('.fresh_users')}/ #{@fresh_users.count}", '#fresh_users'
+    %li
+      = link_to "#{t('.confirmed_users')}/ #{@confirmed_users.count}", '#confirmed_users'
+    %li
+      = link_to "#{t('.busted_users')}/ #{@busted_users.count}", '#busted_users'
+  #fresh_users
+    = render 'users_list', users: @fresh_users
+  #confirmed_users
+    = render 'users_list', users: @confirmed_users
+  #busted_users
+    = render 'users_list', users: @busted_users

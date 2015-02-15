@@ -8,8 +8,6 @@ class UserSignInType
   validates :password, presence: true
 
   validate :check_authenticate, if: :email
-  validate :check_banned_user, if: :email
-  # validate :check_new_user, if: :email
 
   def user
     ::User.find_by(email: email.mb_chars.downcase)

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_secure_password validations: false
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
 
@@ -26,22 +27,25 @@ class User < ActiveRecord::Base
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
   enumerize :role, in: [ :participant, :admin ], default: :participant
 
-  state_machine :confirm_state, initial: :new do
-    state :new
+  scope :fresh, -> { where confirm_state: :fresh  }
+  scope :accepted, -> { where confirm_state: :accepted  }
+  scope :busted, -> { where confirm_state: :busted  }
+
+  state_machine :confirm_state, initial: :fresh do
+    state :fresh
     state :accepted
     state :busted
-    state :reserved
 
     event :accept do
-      transition [ :new, :reserved ] => :accepted
+      transition all => :accepted
     end
 
     event :bust do
-      transition [ :new, :reserved ] => :busted
+      transition all => :busted
     end
 
     event :reserve do
-      transition [ :new ] => :reserved
+      transition all => :reserved
     end
   end
 end

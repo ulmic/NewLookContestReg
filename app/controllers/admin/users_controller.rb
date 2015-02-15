@@ -1,7 +1,8 @@
 class Admin::UsersController < Admin::ApplicationController
-
   def index
-    @users = User.all
+    @fresh_users = UserDecorator.decorate_collection User.fresh
+    @confirmed_users = UserDecorator.decorate_collection User.accepted
+    @busted_users = UserDecorator.decorate_collection User.busted
   end
 
   def show
