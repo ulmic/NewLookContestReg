@@ -28,5 +28,12 @@ task :seed_data do
   run "cd #{current_path} && RAILS_ENV=#{rails_env} #{rake} db:seed"
 end
 
+namespace :assets do
+  task :precompile do
+    run "cd #{current_path} && RAILS_ENV=#{rails_env} #{rake} assets:precompile"
+  end
+end
+before 'deploy:restart', 'assets:precompile'
+
 after "deploy:restart", "unicorn:restart"
 #require 'capistrano_colors'
