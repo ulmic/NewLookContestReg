@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.17'
+gem 'rails', '4.1.7'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
@@ -24,12 +24,6 @@ gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rai
 gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass', '~> 3.1.1.0'
-
-group :assets do
-  gem 'sass-rails', '3.2.6'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
 
 group :test do
   gem 'simplecov', require: false
