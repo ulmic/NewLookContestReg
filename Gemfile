@@ -22,6 +22,9 @@ gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rai
 gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass', '~> 3.1.1.0'
+gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
+gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
+gem 'validates_timeliness', '~> 3.0'
 
 group :assets do
   gem 'coffee-rails'
