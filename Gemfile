@@ -1,36 +1,32 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.17'
+gem 'rails', '4.1.7'
 gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
-gem 'haml'
 gem 'jquery-rails'
-gem 'validate_url'
 gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'draper'
-gem 'state_machine'
+gem 'state_machine', git: 'git://github.com/seuros/state_machine.git'
 gem 'usefull_scopes'
 gem 'enumerize'
-gem 'bootswatch-rails'
-gem 'bootstrap-sass'
+gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~> 3.2.0.0'
+gem 'bootswatch-rails', '~> 3.2.0'
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
 gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
+gem 'validates_timeliness', '~> 3.0'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'coffee-rails'
 end
 
 group :test do
   gem 'simplecov', require: false
-  gem 'minitest'
   gem 'factory_girl_rails', require: false
-  gem 'turn'
-  gem 'tconsole', git: "git://github.com/gma/tconsole"
+  gem 'tconsole', github: 'ulmic/tconsole', branch: 'rails4'
   gem 'pry'
 end
 

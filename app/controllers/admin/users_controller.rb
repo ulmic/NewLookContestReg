@@ -9,11 +9,11 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = UserRegistrationType.new
   end
 
   def create
-    @user = User.new params[:user]
+    @user = UserRegistrationType.new params[:user]
     if @user.save
       redirect_to @user
     else
@@ -22,11 +22,11 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def edit
-    @user = User.find params[:id]
+    @user = UserRegistrationType.find params[:id]
   end
 
   def update
-    @user = User.find params[:id]
+    @user = UserRegistrationType.find params[:id]
     if @user.update_attributes params[:user]
       redirect_to admin_user_path
     else
