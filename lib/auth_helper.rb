@@ -39,9 +39,9 @@ module AuthHelper
     admin.password === password
   end
 
-  def authenticate_admin!
-    unless admin_signed_in?
-      redirect_to new_admin_session_path
+  def authenticate_user!
+    unless user_signed_in?
+      redirect_to new_session_path
     end
   end
 

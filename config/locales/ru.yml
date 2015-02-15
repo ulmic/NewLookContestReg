@@ -16,7 +16,28 @@ ru:
   users:
     form:
       this_password_for_sign_in: 'Не меньше 3 символов, не больше 16 символов.'
+      accept_agreement: Принимаю условия пользовательского соглашения
   welcome:
     index:
       send_request: Отправить заявку на конкурс
       competition_doc: 'Положением конкурса'
+  flash_messages:
+    users:
+      create:
+        success: 'Ваша заявка успешно отправлена. Оргкомитет конкурса с вами свяжется'
+  admin:
+    users:
+      index:
+        title: Заявки на конкурс
+        fresh_users: Новые заявки
+        confirmed_users: Подтверждённые
+        busted_users: Забаненные
+  helpers:
+    actions: Действия
+    links:
+      edit: Изменить
+      destroy: Удалить
+      new: Добавить
+      accept: Подтвердить
+      bust: Забанить
+    hide: Скрыть

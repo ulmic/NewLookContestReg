@@ -1,7 +1,8 @@
 class Admin::UsersController < Admin::ApplicationController
-
   def index
-    @users = User.all
+    @fresh_users = UserDecorator.decorate_collection User.participants.fresh
+    @confirmed_users = UserDecorator.decorate_collection User.participants.accepted
+    @busted_users = UserDecorator.decorate_collection User.participants.busted
   end
 
   def show
@@ -9,11 +10,11 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def new
-    @user = UserRegistrationType.new
+    @user = UserEditByAdminType.new
   end
 
   def create
-    @user = UserRegistrationType.new params[:user]
+    @user = UserEditByAdminType.new params[:user]
     if @user.save
       redirect_to @user
     else
@@ -22,13 +23,13 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def edit
-    @user = UserRegistrationType.find params[:id]
+    @user = UserEditByAdminType.find params[:id]
   end
 
   def update
-    @user = UserRegistrationType.find params[:id]
+    @user = UserEditByAdminType.find params[:id]
     if @user.update_attributes params[:user]
-      redirect_to admin_user_path
+      redirect_to admin_users_path
     else
       render :edit
     end

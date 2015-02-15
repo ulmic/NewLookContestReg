@@ -5,6 +5,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
@@ -15,6 +16,7 @@ gem 'enumerize'
 
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
+gem 'russian'
 
 gem 'datetimepicker-rails', git: 'git://github.com/zpaulovics/datetimepicker-rails.git', branch: 'v1.0.0'
 #gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
@@ -25,11 +27,19 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'bootswatch-rails', '~> 3.2.0'
 gem 'validates_timeliness', '~> 3.0'
+gem "bootstrap_flash_messages", "~> 1.0.0"
+gem 'virtus'
+gem 'bcrypt'
 
 group :assets do
   gem 'coffee-rails'
   gem 'therubyracer'
   gem 'uglifier'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :test do
