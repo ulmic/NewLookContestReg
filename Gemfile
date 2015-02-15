@@ -23,6 +23,10 @@ gem 'sprockets-rails', '=2.0.0.backport1'
 gem 'bootswatch-rails'
 gem 'bootstrap-sass', '~> 3.1.1.0'
 
+group :assets do
+  gem 'coffee-rails'
+end
+
 group :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails', require: false
