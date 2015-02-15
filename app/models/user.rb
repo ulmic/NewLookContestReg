@@ -24,6 +24,7 @@ class User < ActiveRecord::Base
   extend Enumerize
   include Municipalities
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
+  enumerize :role, in: [ :participant, :admin ], default: :participant
 
   state_machine :confirm_state, initial: :new do
     state :new
