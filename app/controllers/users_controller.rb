@@ -8,11 +8,11 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = UserRegistrationType.new
   end
 
   def create
-    @user = User.new params[:user]
+    @user = UserRegistrationType.new params[:user]
     if @user.save
       redirect_to root_path
     else
