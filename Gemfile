@@ -20,7 +20,7 @@ gem 'momentjs-rails', '>= 2.8.1',  github: 'derekprior/momentjs-rails'
 group :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails', require: false
-  gem 'tconsole', git: 'git://github.com/ulmic/tconsole', branch: 'rails4'
+  gem 'tconsole', github: 'ulmic/tconsole', branch: 'rails4'
   gem 'pry'
 end
 
