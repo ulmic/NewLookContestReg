@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = UserRegistrationType.new params[:user]
     if @user.save
-      redirect_to root_path
+      redirect_to root_path, flash: :success
     else
       render :new
     end

@@ -21,3 +21,7 @@ ru:
     index:
       send_request: Отправить заявку на конкурс
       competition_doc: 'Положением конкурса'
+  flash_messages:
+    users:
+      create:
+        success: 'Ваша заявка успешно отправлена. Оргкомитет конкурса с вами свяжется'

@@ -2,7 +2,6 @@ class UserRegistrationType < User
   include ApplicationType
 
   validates :email, presence: true
-  validates :password, presence: true
   validates :birth_date, presence: true,
                          timeliness: { on_or_after: lambda { Date.parse('31 May 1993') } }
   validates :municipality, presence: true
