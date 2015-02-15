@@ -21,6 +21,8 @@
         %td= user.school_group
         %td= user.contacts
         %td
+          - if user.fresh?
+            = link_to t('.accept'), admin_user_path(user, user: { confirm_state: :accepted }), class: 'btn btn-success btn-xs'
           = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_user_path(user), class: 'btn btn-warning btn-xs'
           = link_to t('.destroy', default: t("helpers.links.destroy")), admin_user_path(user), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-xs btn-danger'
 

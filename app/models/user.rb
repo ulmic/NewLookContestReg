@@ -27,6 +27,7 @@ class User < ActiveRecord::Base
   enumerize :municipality, in: Municipalities.list, default: Municipalities.list.first
   enumerize :role, in: [ :participant, :admin ], default: :participant
 
+  scope :participants, -> { where role: :participant  }
   scope :fresh, -> { where confirm_state: :fresh  }
   scope :accepted, -> { where confirm_state: :accepted  }
   scope :busted, -> { where confirm_state: :busted  }
