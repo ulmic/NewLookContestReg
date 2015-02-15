@@ -17,7 +17,8 @@ ru:
         house: Дом
         icq: ICQ
         job: Работа
-        role: Должность
+        position: Должность
+        role: Роль на сайте
         school: Учебное заведение
         street: Улица
         twitter: Аккаунт в твиттере
@@ -30,11 +31,4 @@ ru:
         password: Пароль
         accept_agreement: Условия пользовательского соглашения
         patronymic: Отчество
-      public_work:
-        title: Название
-        text: Текст работы
-        header: Руководитель
-        header_coordinates: Контакты руководителя
-        annotation: Аннотация
-        video_link: Ссылка на видео
-        nomination: Номинация
+        avatar: Аватар

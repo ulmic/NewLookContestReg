@@ -5,6 +5,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'validates'
 gem 'carrierwave'
 gem 'rmagick'
@@ -27,6 +28,8 @@ gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'bootswatch-rails', '~> 3.2.0'
 gem 'validates_timeliness', '~> 3.0'
 gem "bootstrap_flash_messages", "~> 1.0.0"
+gem 'virtus'
+gem 'bcrypt'
 
 group :assets do
   gem 'coffee-rails'
