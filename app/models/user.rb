@@ -1,14 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessible :birth_date,      :building,          :city,
-                  :email,           :municipality,      :first_name,
-                  :flat,            :group,             :home_phone,
-                  :house,           :skype,             :job,
-                  :last_name,       :middle_name,       :mobile_phone,
-                  :role,            :school,            :street,
-                  :image,           :events,            :honors,
-                  :media,           :portfolio,         :confirm_state,
-                  :password,        :accept_agreement
-
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
 
