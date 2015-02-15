@@ -23,6 +23,8 @@ gem 'validates_timeliness', '~> 3.0'
 
 group :assets do
   gem 'coffee-rails'
+  gem 'therubyracer'
+  gem 'uglifier'
 end
 
 group :test do
@@ -35,7 +37,7 @@ end
 group :production do
   gem 'unicorn'
   gem 'capistrano'
-  gem 'rvm-capistrano'
-  gem 'capi'
-  gem 'capistrano_colors'
+  gem 'rvm-capistrano', require: false
+  gem 'capi', require: false
+  gem 'capistrano_colors', require: false
 end

@@ -5,4 +5,4 @@ set :keep_releases, 15
 
 set :user, 'newlook'
 
-server "ulmic.ru", :app, :web, :db, :primary => true
+server "ulmic.ru", :app, :web, :db, primary: true
