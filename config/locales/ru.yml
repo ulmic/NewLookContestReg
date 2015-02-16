@@ -33,6 +33,10 @@ ru:
         fresh_users: Новые заявки
         confirmed_users: Подтверждённые
         busted_users: Забаненные
+      edit:
+        title: Редактировать пользователя
+      new:
+        title: Добавить пользователя
   helpers:
     actions: Действия
     links:
