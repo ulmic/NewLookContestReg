@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_one :public_work
   mount_uploader :portfolio, PortfolioUploader
   mount_uploader :avatar, AvatarUploader
+  mount_uploader :creative_work, CreativeWorkUploader
 
   validates :first_name, presence: true,
                          length: { maximum: 20 }

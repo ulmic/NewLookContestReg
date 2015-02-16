@@ -31,13 +31,18 @@
       = f.input :honors, placeholder: "Напишите свои достижения в области журналистики и публицистики"
       = f.input :media,  placeholder: "В случае электронных СМИ со ссылками на конкретные работы"
       %hr
+      %br
+      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
       = f.label :portfolio
       = f.file_field :portfolio
 
       = f.label :avatar
       = f.file_field :avatar
-      %br
-      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
+      = f.input :creative_work, as: :file
+      = f.hint t('hints.users.new.creative_work_size')
+      = f.input :url_creative_work, as: :string
       %hr
       != t('hints.users.new.accept_agreement')
       = f.label t('.accept_agreement')
