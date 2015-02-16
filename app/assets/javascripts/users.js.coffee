@@ -1,5 +1,5 @@
 enable_submit = ->
-  if $('#user_accept_agreement').prop('checked') == true
+  if ($('#user_creative_work').val() != '' || $('#user_url_creative_work').val() != '') && $('#user_accept_agreement').prop('checked') == true
     $('#send_request').prop('disabled', false)
   else
     $('#send_request').prop('disabled', true)
@@ -19,6 +19,6 @@ $(document).ready ->
     enable_submit()
     return
   enable_submit()
-  if $('#user_accept_agreement').prop('checked') == true
+  if ($('#user_creative_work').val() != '' || $('#user_url_creative_work').val() != '') && $('#user_accept_agreement').prop('checked') == true
     $('#user_accept_agreement').prop('disabled', true)
   return
