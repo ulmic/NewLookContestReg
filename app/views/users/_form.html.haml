@@ -40,7 +40,7 @@
       = f.label :avatar
       = f.file_field :avatar
       %hr
-      = f.input :creative_work, as: :file
+      = f.input :creative_work, as: :file, required: true
       = f.hint t('hints.users.new.creative_work_size')
       = f.input :url_creative_work, as: :string
       %hr
