@@ -9,6 +9,8 @@
       %th= model_class.human_attribute_name(:place)
       %th= model_class.human_attribute_name(:school_group)
       %th= model_class.human_attribute_name(:contacts)
+      %th= model_class.human_attribute_name(:portfolio)
+      %th= model_class.human_attribute_name(:creative_work)
       %th=t '.actions', default: t("helpers.actions")
   %tbody
     - users.each do |user|
@@ -20,6 +22,11 @@
         %td= user.place
         %td= user.school_group
         %td= user.contacts
+        %td= link_to model_class.human_attribute_name(:portfolio), user.portfolio.url
+        %td
+          = link_to model_class.human_attribute_name(:creative_work), user.creative_work.url
+          %br
+          = link_to model_class.human_attribute_name(:url_creative_work), user.url_creative_work
         %td
           - if user.fresh?
             = link_to t('.accept', default: t('helpers.links.accept')), admin_user_path(user, user: { confirm_state: :accepted }), method: :put, class: 'btn btn-success btn-xs'

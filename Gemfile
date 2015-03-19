@@ -38,6 +38,8 @@ end
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'web-console', '2.0.0.beta2'
+  gem 'better_errors'
 end
 
 group :test do
