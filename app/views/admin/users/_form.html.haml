@@ -23,6 +23,8 @@
       = f.input :events, placeholder: "Напишите мероприятия журналистской или иной направленности, в которых принимали участие"
       = f.input :honors, placeholder: "Напишите свои достижения в области журналистики и публицистики"
       = f.input :media,  placeholder: "В случае электронных СМИ со ссылками на конкретные работы"
+      = f.input :creative_work, as: :file, required: true
+      = f.input :url_creative_work, as: :string
       %hr
       = f.label :portfolio
       = f.file_field :portfolio
