@@ -13,7 +13,10 @@ NLCR::Application.routes.draw do
     resources :participants, only: [ :new, :create, :destroy ]
   end
   namespace :admin do
-    root to: 'users#index'
+    root to: 'informat/participants#index'
+    namespace :informat do
+      resources :participants
+    end
     resources :users do
       member do
         put :accept

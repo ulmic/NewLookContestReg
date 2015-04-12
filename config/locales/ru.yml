@@ -47,6 +47,17 @@ ru:
         title: Редактировать пользователя
       new:
         title: Добавить пользователя
+    informat:
+      participants:
+        index:
+          title: Заявки на конкурс
+          fresh_participants: Новые заявки
+          confirmed_participants: Подтверждённые
+          busted_participants: Забаненные
+        edit:
+          title: Редактировать пользователя
+        new:
+          title: Добавить пользователя
   helpers:
     actions: Действия
     links:
