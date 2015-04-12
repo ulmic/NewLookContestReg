@@ -14,15 +14,25 @@ ru:
       new:
         accept_agreement: "Вы принимаете условия <a href = 'http://informat.ru/pages/privacy'>Пользовательского соглашения</a>."
         creative_work_size: "творческая работа должна быть не более 25 мб. Если творческая работа имеет размер больше 25 мб, тогда следует загрузить на любой из облачных сервисов: Dropbox, Яндекс.Диск, GoogleDrive и т.д. И добавить общедоступную (!) ссылку на работу в следующем поле."
+    participants:
+      new:
+        accept_agreement: "Вы принимаете условия <a href = 'http://informat.ru/pages/privacy'>Пользовательского соглашения</a>."
   users:
     form:
       this_password_for_sign_in: 'Не меньше 3 символов, не больше 16 символов.'
       accept_agreement: Принимаю условия пользовательского соглашения
+  informat:
+    participants:
+      form:
+        accept_agreement: Принимаю условия пользовательского соглашения
   welcome:
     index:
       send_request: Отправить заявку на конкурс
       competition_doc: 'Положением конкурса'
+      informat_event: 'Фестиваль начинающих журналистов «Inформат» проводится уже в 10 раз. Подать заявку можно на этом сайте.'
   flash_messages:
+    defaults:
+      success: 'Форма заполнена успешно. Оргкомитет с вами свяжется.'
     users:
       create:
         success: 'Ваша заявка успешно отправлена. Оргкомитет конкурса с вами свяжется'

@@ -1,0 +1,33 @@
+= javascript_include_tag :users
+
+= simple_form_for @participant do |f|
+  - if @participant.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@participant.errors.count, "error")} prohibited this participant from being saved:"
+      %ul
+        - @participant.errors.full_messages.each do |msg|
+          %li= msg
+  - f.with_options input_html: { class: 'form-control' } do |f|
+    .field
+      = f.input :first_name, as: :string
+      = f.input :patronymic, as: :string
+      = f.input :last_name, as: :string
+      = f.input :birth_date, as: :date_picker
+      = f.input :school, as: :string
+      = f.input :group, as: :string
+      = f.input :municipality
+      = f.input :city, as: :string
+      = f.input :street, as: :string
+      = f.input :house, as: :string
+      = f.input :building, as: :string
+      = f.input :flat, as: :string
+      = f.input :mobile_phone, placeholder: "Телефон обязателен для связи с организаторами", as: :string
+      = f.input :home_phone, placeholder: "Телефон обязателен для связи с организаторами", as: :string
+      = f.input :email, placeholder: "Email обязателен для получения информации и конкурсе", as: :string
+      = f.input :experience
+      = f.input :activity_line
+      != t('hints.participants.new.accept_agreement')
+      = f.label t('.accept_agreement')
+      = f.check_box :accept_agreement, as: :boolean
+    .actions
+      = f.submit "Отправить", class: "btn btn-large btn-success", id: :send_request

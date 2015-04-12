@@ -6,35 +6,6 @@
   .right-side
     = flash_messages :close, :fade
     %h4
-      = t('contest.tradition')
-    %h4
-      = t('contest.about_money')
-    %h4
-      = t('contest.before_request_read_competition')
-      = link_to '/Положение о конкурсе Новый взгляд.docx' do
-        = content_tag :span do
-          = t('.competition_doc')
-      \.
-
-    В заявке обязательно наличие творческой работы. Загрузить работу можно двумя способами:
-    %ol
-      %li Загрузить файл. Максимальный размер файл 25 мегабайт. Если файл превышает указанный размер, он не будет загружен.
-      %li
-        Отправить публичную ссылку на файл в одной из облачных систем:
-        = link_to 'Dropbox', 'http://dropbox.com'
-        = ', '
-        = link_to 'Google Drive', 'http://drive.google.com'
-        = ', '
-        = link_to 'OneDrive', 'http://onedrive.com'
-        = ', '
-        = link_to 'iCloud', 'http://icloud.com'
-        или загрузить на видео на
-        = link_to 'YouTube', 'http://youtube.com'
-        = ', '
-        = link_to 'Vimeo', 'http://vimeo.com'
-        и т.д. Если ссылка будет вести на файл, не имеющий настроек доступа "По ссылке", работа будет считаться непринятой.
-      Вы обязательно должны воспользоваться одним способом, а также можете воспользоваться сразу двумя способами.
+      = t('.informat_event')
   .left-side
-    %h4
-      = t('.send_request')
-    = render 'users/form'
+    = render 'informat/participants/form'

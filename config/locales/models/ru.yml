@@ -34,3 +34,19 @@ ru:
         avatar: Аватар
         creative_work: Креативная работа
         url_creative_work: Ссылка на креативную работу
+        experience: Опыт работы
+        activity_line: Направление деятельности
+  enumerize:
+    defaults:
+      activity_line:
+        radio: Радио
+        periodicals: Периодическая печать
+        internet: Интернет
+        tv: ТВ
+    informat:
+      participant:
+        activity_line:
+          radio: Радио
+          periodicals: Периодическая печать
+          internet: Интернет
+          tv: ТВ

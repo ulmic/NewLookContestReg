@@ -1,24 +1,28 @@
-enable_submit = ->
-  if ($('#user_creative_work').val() != '' || $('#user_url_creative_work').val() != '') && $('#user_accept_agreement').prop('checked') == true
+enable_submit = (model_name) ->
+  if $("##{model_name}_accept_agreement").prop('checked') == true
     $('#send_request').prop('disabled', false)
   else
     $('#send_request').prop('disabled', true)
   return
 
-$(document).ready ->
+init_form = (model_name) ->
   $('#send_request').prop('disabled', true)
-  if $('#user_municipality').val().substring(0, 2) == 'г.'
-    $('#user_city').val($('#user_municipality').val())
-  $('#user_municipality').on 'change', ->
+  if $("##{model_name}_municipality").val().substring(0, 2) == 'г.'
+    $("##{model_name}_city").val($("##{model_name}_municipality").val())
+  $("##{model_name}_municipality").on 'change', ->
     if $(this).val().substring(0, 2) == 'г.'
-      $('#user_city').val($(this).val())
+      $("##{model_name}_city").val($(this).val())
     else
-      $('#user_city').val('')
+      $("##{model_name}_city").val('')
     return
-  $('#user_accept_agreement').change ->
-    enable_submit()
+  $("##{model_name}_accept_agreement").change ->
+    enable_submit model_name
     return
-  enable_submit()
-  if ($('#user_creative_work').val() != '' || $('#user_url_creative_work').val() != '') && $('#user_accept_agreement').prop('checked') == true
-    $('#user_accept_agreement').prop('disabled', true)
+  enable_submit model_name
+  if ($("##{model_name}_creative_work").val() != '' || $("##{model_name}_url_creative_work").val() != '') && $("##{model_name}_accept_agreement").prop('checked') == true
+    $("##{model_name}_accept_agreement").prop('disabled', true)
+
+
+$ ->
+  init_form 'informat_participant'
   return
