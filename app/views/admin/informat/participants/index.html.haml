@@ -1,0 +1,19 @@
+= javascript_include_tag :tabs
+= stylesheet_link_tag :tabs
+
+.page-header
+  %h1=t '.title'
+#tabs
+  %ul.nav.nav-tabs{ role: :tablist }
+    %li
+      = link_to "#{t('.fresh_participants')}/ #{@fresh_participants.count}", '#fresh_participants'
+    %li
+      = link_to "#{t('.confirmed_participants')}/ #{@confirmed_participants.count}", '#confirmed_participants'
+    %li
+      = link_to "#{t('.busted_participants')}/ #{@busted_participants.count}", '#busted_participants'
+  #fresh_participants
+    = render 'participants_list', participants: @fresh_participants
+  #confirmed_participants
+    = render 'participants_list', participants: @confirmed_participants
+  #busted_participants
+    = render 'participants_list', participants: @busted_participants
