@@ -9,6 +9,9 @@ NLCR::Application.routes.draw do
     end
   end
   resource :session, only: [:new, :create, :destroy]
+  namespace :informat do
+    resources :participants, only: [ :new, :create, :destroy ]
+  end
   namespace :admin do
     root to: 'users#index'
     resources :users do

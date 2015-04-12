@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @user = UserRegistrationType.new
+    @participant = Informat::ParticipantFillingType.new
   end
 end
