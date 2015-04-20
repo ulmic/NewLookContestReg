@@ -13,7 +13,6 @@ class Informat::Participant < User
   validates :street, presence: true
   validates :house, presence: true
   validates :mobile_phone, presence: true
-  validates :home_phone, presence: true
   validates :email, presence: true
   validates :accept_agreement, presence: true
   validates :activity_line, presence: true

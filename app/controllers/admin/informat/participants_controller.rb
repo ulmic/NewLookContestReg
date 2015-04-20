@@ -14,10 +14,10 @@ class Admin::Informat::ParticipantsController < Admin::Informat::ApplicationCont
   end
 
   def create
-    @participant = ::Informat::ParticipantEditByAdminType.new params[:participant]
-    params[:participant].permit!
+    @participant = ::Informat::ParticipantEditByAdminType.new params[:informat_participant]
+    params[:informat_participant].permit!
     if @participant.save
-      redirect_to @participant
+      redirect_to admin_informat_participants_path
     else
       render :new
     end
