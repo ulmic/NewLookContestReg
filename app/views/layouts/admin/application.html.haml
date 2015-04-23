@@ -2,11 +2,29 @@
   %head
     %title Новый взгляд
     = favicon_link_tag 'favicon.ico'
-    = stylesheet_link_tag    :application
     = stylesheet_link_tag    'admin/application'
+    = stylesheet_link_tag    :application
     = javascript_include_tag :application
     = csrf_meta_tags
   %body
-    .jumbotron
+    %header.navbar.navbar-default
+      .navbar-header
+        %button.navbar-toggle{"type" => "button", "data-toggle" => "collapse",
+          "data-target" => ".navbar-collapse"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{ href: root_path }
+          = t('application.attributes.name')
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          = menu_item admin_participants_path do
+            = "#{t('.contest_participants')} / #{@contest_parts}"
+          = menu_item admin_users_path do
+            = "#{t('.fair_participants')} / #{@fair_parts}"
+        %ul.nav.navbar-nav.pull-right
+          = menu_item session_path, method: :delete do
+            = t('.sign_out')
+    .container.admin
       = yield
       = render 'layouts/footer'

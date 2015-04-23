@@ -28,6 +28,7 @@ gem 'validates_timeliness', '~> 3.0'
 gem "bootstrap_flash_messages", "~> 1.0.0"
 gem 'virtus'
 gem 'bcrypt'
+gem 'to_xls-rails'
 
 group :assets do
   gem 'coffee-rails'

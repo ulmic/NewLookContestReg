@@ -1,0 +1,38 @@
+= simple_form_for @user, url: { controller: 'admin/users', action: action } do |f|
+  - f.with_options input_html: { class: 'form-control' } do |f|
+    .field
+      = f.input :role
+      = f.input :first_name, as: :string
+      = f.input :patronymic, as: :string
+      = f.input :last_name, as: :string
+      = f.input :birth_date, as: :date_picker
+      = f.input :school, as: :string
+      = f.input :group, as: :string
+      = f.input :job, as: :string
+      = f.input :position, as: :string
+      = f.input :municipality
+      = f.input :city, as: :string
+      = f.input :street, as: :string
+      = f.input :house, as: :string
+      = f.input :building, as: :string
+      = f.input :flat, as: :string
+      = f.input :mobile_phone, placeholder: "Телефон обязателен для связи с организаторами", as: :string
+      = f.input :skype, as: :string
+      = f.input :email, placeholder: "Email обязателен для получения информации и конкурсе", as: :string
+      = f.input :password, placeholder: t('.this_password_for_sign_in')
+      = f.input :events, placeholder: "Напишите мероприятия журналистской или иной направленности, в которых принимали участие"
+      = f.input :honors, placeholder: "Напишите свои достижения в области журналистики и публицистики"
+      = f.input :media,  placeholder: "В случае электронных СМИ со ссылками на конкретные работы"
+      = f.input :creative_work, as: :file, required: true
+      = f.input :url_creative_work, as: :string
+      %hr
+      = f.label :portfolio
+      = f.file_field :portfolio
+      %br
+      %small Все публикации (их сканы, документы Word и др.). должны быть заархивированы. Пользователь может загрузить только один архив.
+      %hr
+      != t('hints.users.new.accept_agreement')
+      = f.label t('.accept_agreement')
+      = f.check_box :accept_agreement, as: :boolean
+    .actions
+      = f.submit "Отправить", class: "btn btn-large btn-success", id: :send_request
