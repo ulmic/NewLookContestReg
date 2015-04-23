@@ -1,5 +1,7 @@
 ru:
   application:
+    attributes:
+      name: Сайт Нового взгляда
     developers: 'Разработчики ИТ-проектов МИЦ'
     github_link: 'Этот проект на Github'
   contest:
@@ -36,7 +38,17 @@ ru:
     users:
       create:
         success: 'Ваша заявка успешно отправлена. Оргкомитет конкурса с вами свяжется'
+  layouts:
+    admin:
+      application:
+        contest_participants: Участники конкурса
+        fair_participants: Участники фестиваля
+
   admin:
+    participants:
+      index:
+        participants: Участники
+        title: Заявки на конкурс
     users:
       index:
         title: Заявки на конкурс
@@ -50,7 +62,7 @@ ru:
     informat:
       participants:
         index:
-          title: Заявки на конкурс
+          title: Заявки на фестиваль
           fresh_participants: Новые заявки
           confirmed_participants: Подтверждённые
           busted_participants: Забаненные
@@ -60,6 +72,7 @@ ru:
           title: Добавить пользователя
   helpers:
     actions: Действия
+    download_xls: Скачать Excel
     links:
       edit: Изменить
       destroy: Удалить

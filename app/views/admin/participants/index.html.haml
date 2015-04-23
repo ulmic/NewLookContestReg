@@ -1,0 +1,13 @@
+= javascript_include_tag :tabs
+= stylesheet_link_tag :tabs
+
+.page-header
+  %h1
+    = t '.title'
+    = link_to t('helpers.download_xls'), admin_participants_path(format: :xls), class: 'btn btn-success'
+#tabs
+  %ul.nav.nav-tabs{ role: :tablist }
+    %li
+      = link_to "#{t('.participants')}/ #{@users.count}", '#users'
+  #users
+    = render 'users_list', users: @users

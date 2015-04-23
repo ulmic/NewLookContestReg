@@ -14,6 +14,7 @@ NLCR::Application.routes.draw do
   end
   namespace :admin do
     root to: 'informat/participants#index'
+    resources :participants
     namespace :informat do
       resources :participants
     end
