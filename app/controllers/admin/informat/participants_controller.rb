@@ -1,8 +1,8 @@
 class Admin::Informat::ParticipantsController < Admin::Informat::ApplicationController
   def index
-    @fresh_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.participants.fresh
-    @confirmed_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.participants.accepted
-    @busted_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.participants.busted
+    @fresh_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.fresh
+    @confirmed_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.accepted
+    @busted_participants = ::Informat::ParticipantDecorator.decorate_collection Informat::Participant.busted
   end
 
   def show
