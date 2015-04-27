@@ -20,7 +20,7 @@
         %ul.nav.navbar-nav
           = menu_item admin_participants_path do
             = "#{t('.contest_participants')} / #{@contest_parts}"
-          = menu_item admin_users_path do
+          = menu_item admin_informat_participants_path do
             = "#{t('.fair_participants')} / #{@fair_parts}"
         %ul.nav.navbar-nav.pull-right
           = menu_item session_path, method: :delete do
